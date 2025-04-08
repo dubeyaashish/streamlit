@@ -128,7 +128,6 @@ def get_database_connection():
     return client["prod"]
 
 db = get_database_connection()
-st.write("Database connection successfully established.")
 
 # ---------------------- Data Fetching Functions ---------------------- #
 @st.cache_data(ttl=600, show_spinner=False)
