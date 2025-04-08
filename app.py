@@ -14,6 +14,8 @@ from streamlit_autorefresh import st_autorefresh
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+from dotenv import load_dotenv
+import os
 import io
 import base64
 from PIL import Image
@@ -113,11 +115,15 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
+load_dotenv()
 # ---------------------- Database Connection ---------------------- #
 @st.cache_resource
 def get_database_connection():
-    connection_string = "mongodb://foxbith-dev:bcNyxh5caFazjTRg@atlas-sql-660bc9484af8305e6a15eb69-nqfeq.a.query.mongodb.net/prod?ssl=true&authSource=admin"
+    # Retrieve the connection string from the environment
+    connection_string = os.getenv("MONGODB_CONNECTION_STRING")
+    if not connection_string:
+        raise ValueError("MongoDB connection string not found in environment variables.")
+    
     client = pymongo.MongoClient(connection_string)
     return client["prod"]
 
