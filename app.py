@@ -304,7 +304,7 @@ def get_review_data(start_date, end_date):
         return pd.DataFrame()
 
 # ---------------------- SIDEBAR Setup ---------------------- #
-st.sidebar.image("https://www.freepnglogos.com/uploads/gear-png/gear-png-clipart-gears-clipartix-3.png", width=100)
+st.sidebar.image("https://bi.ruu-d.com/logo.png", width=100)
 st.sidebar.title("Job Management Dashboard")
 
 today = datetime.now().date()
