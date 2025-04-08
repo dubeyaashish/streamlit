@@ -130,7 +130,7 @@ def get_database_connection():
 db = get_database_connection()
 
 # ---------------------- Data Fetching Functions ---------------------- #
-@st.cache_data(ttl=600, show_spinner=False)
+@st.cache_data(ttl=3600, show_spinner=False)
 def get_job_data(start_date, end_date):
     start_date_obj = datetime.combine(start_date, datetime.min.time())
     end_date_obj = datetime.combine(end_date, datetime.max.time())
@@ -260,7 +260,7 @@ def get_job_data(start_date, end_date):
         st.error(f"Error retrieving job data: {e}")
         return pd.DataFrame()
 
-@st.cache_data(ttl=600, show_spinner=False)
+@st.cache_data(ttl=3600, show_spinner=False)
 def get_review_data(start_date, end_date):
     start_date_obj = datetime.combine(start_date, datetime.min.time())
     end_date_obj = datetime.combine(end_date, datetime.max.time())
