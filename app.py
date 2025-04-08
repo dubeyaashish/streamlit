@@ -13,14 +13,8 @@ from folium.plugins import MarkerCluster
 from streamlit_autorefresh import st_autorefresh
 import geopandas as gpd
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
 from dotenv import load_dotenv
 import os
-import io
-import base64
-from PIL import Image
-import requests
-from io import BytesIO
 
 # ---------------------- Helper Functions ---------------------- #
 def safe_str(val):
@@ -50,7 +44,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-st_autorefresh(interval=60 * 1000, limit=None, key="datarefresh")
+st_autorefresh(interval=600 * 1000, limit=None, key="datarefresh")
 
 # ---------------------- Custom CSS ---------------------- #
 st.markdown("""
@@ -59,9 +53,7 @@ st.markdown("""
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 10px;
-    }
+    .stTabs [data-baseweb="tab-list"] { gap: 10px; }
     .stTabs [data-baseweb="tab"] {
         padding: 10px 20px;
         border-radius: 5px 5px 0px 0px;
@@ -92,30 +84,16 @@ st.markdown("""
         border-bottom: 2px solid #f0f2f6;
         margin-bottom: 20px;
     }
-    [data-testid="stMetricDelta"] > div:nth-child(1) {
-        justify-content: center;
-    }
-    [data-testid="stMetricValue"] > div {
-        justify-content: center;
-    }
-    .stMarkdown p {
-        margin-bottom: 0.5rem;
-    }
-    .priority-high {
-        color: #ff4b4b;
-        font-weight: bold;
-    }
-    .priority-medium {
-        color: #ffa500;
-        font-weight: bold;
-    }
-    .priority-low {
-        color: #32cd32;
-        font-weight: bold;
-    }
+    [data-testid="stMetricDelta"] > div:nth-child(1) { justify-content: center; }
+    [data-testid="stMetricValue"] > div { justify-content: center; }
+    .stMarkdown p { margin-bottom: 0.5rem; }
+    .priority-high { color: #ff4b4b; font-weight: bold; }
+    .priority-medium { color: #ffa500; font-weight: bold; }
+    .priority-low { color: #32cd32; font-weight: bold; }
 </style>
 """, unsafe_allow_html=True)
 load_dotenv()
+
 # ---------------------- Database Connection ---------------------- #
 def get_database_connection():
     connection_string = os.getenv("MONGODB_CONNECTION_STRING")
@@ -191,18 +169,18 @@ def get_job_data(start_date, end_date):
             "locationPostalCode": "$jobLocation.postalCode",
             "locationContactName": {
                 "$concat": [
-                    { "$ifNull": ["$jobLocation.contactFirstName", ""] },
+                    {"$ifNull": ["$jobLocation.contactFirstName", ""]},
                     " ",
-                    { "$ifNull": ["$jobLocation.contactLastName", ""] }
+                    {"$ifNull": ["$jobLocation.contactLastName", ""]}
                 ]
             },
             "locationContactPhone": "$jobLocation.contactPhone",
             "locationCoordinates": "$jobLocation.location.coordinates",
             "createdByName": {
                 "$concat": [
-                    { "$ifNull": ["$createdBy.firstName", ""] },
+                    {"$ifNull": ["$createdBy.firstName", ""]},
                     " ",
-                    { "$ifNull": ["$createdBy.lastName", ""] }
+                    {"$ifNull": ["$createdBy.lastName", ""]}
                 ]
             },
             "companyName": "$settingCompany.name",
@@ -226,35 +204,32 @@ def get_job_data(start_date, end_date):
     
     try:
         results = list(db.Job.aggregate(pipeline))
+        # Flatten technician profiles using a list comprehension
         flattened_data = []
         for job in results:
             technicians = job.pop('technicians', [])
-            technician_names = []
-            for tech in technicians:
-                if isinstance(tech, dict):
-                    first = safe_str(tech.get("firstName", ""))
-                    last = safe_str(tech.get("lastName", ""))
-                    full_name = (first + " " + last).strip()
-                    if full_name:
-                        technician_names.append(full_name)
+            technician_names = [
+                " ".join([safe_str(tech.get("firstName", "")), safe_str(tech.get("lastName", ""))]).strip()
+                for tech in technicians if isinstance(tech, dict) and (tech.get("firstName") or tech.get("lastName"))
+            ]
             job['technician_names'] = ', '.join(technician_names) if technician_names else "N/A"
             flattened_data.append(job)
-        
         df = pd.DataFrame(flattened_data)
+        del flattened_data, results
+        
         if not df.empty:
-            for date_field in ['createdAt', 'updatedAt', 'appointmentTime']:
-                if date_field in df.columns:
-                    df[date_field] = pd.to_datetime(df[date_field], errors='coerce')
+            for field in ['createdAt', 'updatedAt', 'appointmentTime']:
+                if field in df.columns:
+                    df[field] = pd.to_datetime(df[field], errors='coerce')
             df['locationProvince'] = df['locationProvince'].fillna('Unknown')
             df['locationDistrict'] = df['locationDistrict'].fillna('Unknown')
             df['locationSubDistrict'] = df['locationSubDistrict'].fillna('Unknown')
             if 'locationCoordinates' in df.columns:
                 df['lon'] = df['locationCoordinates'].apply(lambda x: x[0] if isinstance(x, list) and len(x) == 2 else None)
                 df['lat'] = df['locationCoordinates'].apply(lambda x: x[1] if isinstance(x, list) and len(x) == 2 else None)
-            if 'pauseTime' in df.columns:
-                df['pauseTime'] = pd.to_numeric(df['pauseTime'], errors='coerce')
-            if 'numOfHourSla' in df.columns:
-                df['numOfHourSla'] = pd.to_numeric(df['numOfHourSla'], errors='coerce')
+            for col in ['pauseTime', 'numOfHourSla']:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
         return df
     except Exception as e:
         st.error(f"Error retrieving job data: {e}")
@@ -294,13 +269,33 @@ def get_review_data(start_date, end_date):
             if 'createdAt' in df_reviews.columns:
                 df_reviews['createdAt'] = pd.to_datetime(df_reviews['createdAt'], errors='coerce')
             df_reviews['technician_name'] = df_reviews['technicianProfiles'].apply(
-                lambda tech: (safe_str(tech.get('firstName', '')) + " " + safe_str(tech.get('lastName', ''))).strip()
-                if isinstance(tech, dict) else "Unknown"
+                lambda tech: " ".join([safe_str(tech.get('firstName', '')), safe_str(tech.get('lastName', ''))]).strip()
+                if isinstance(tech, dict) and (tech.get('firstName') or tech.get('lastName')) else "Unknown"
             )
         return df_reviews
     except Exception as e:
         st.error(f"Error retrieving review data: {e}")
         return pd.DataFrame()
+
+# ---------------------- New Helper: Get Team Leaders ---------------------- #
+@st.cache_data(ttl=3600, show_spinner=False)
+def get_team_leaders():
+    """
+    Retrieve a list of team leader names from the TechnicianProfile collection
+    where the position is "TEAM_LEADER".
+    """
+    try:
+        team_leaders_cursor = db.TechnicianProfile.find({"position": "TEAM_LEADER"})
+        team_leaders = []
+        for leader in team_leaders_cursor:
+            name = " ".join([safe_str(leader.get("firstName", "")), safe_str(leader.get("lastName", ""))]).strip()
+            if name:
+                team_leaders.append(name)
+        # Return unique names sorted alphabetically
+        return sorted(list(set(team_leaders)))
+    except Exception as e:
+        st.error(f"Error retrieving team leaders: {e}")
+        return []
 
 # ---------------------- SIDEBAR Setup ---------------------- #
 st.sidebar.image("https://bi.ruu-d.com/logo.png", width=100)
@@ -308,7 +303,6 @@ st.sidebar.title("Job Management Dashboard")
 
 today = datetime.now().date()
 default_start_date = today - timedelta(days=30)
-
 with st.sidebar.expander("Date Range", expanded=True):
     col1, col2 = st.columns(2)
     with col1:
@@ -356,19 +350,22 @@ if df_jobs.empty:
     st.warning("No job data available for the selected date range.")
     st.stop()
 
-# Ensure certain columns are string formatted for display
 for col in ['jobNo', 'status', 'locationName', 'locationAddress', 'locationDistrict', 'locationProvince']:
     if col in df_jobs.columns:
         df_jobs[col] = df_jobs[col].apply(safe_str)
 
-# Apply sidebar filters
+# ---------------------- Sidebar Filters ---------------------- #
 with st.sidebar.expander("Filters", expanded=True):
     selected_status = st.selectbox("Job Status", ['All'] + sorted(df_jobs['status'].unique().tolist())) if 'status' in df_jobs.columns else 'All'
     selected_type = st.selectbox("Job Type", ['All'] + sorted(df_jobs['type'].unique().tolist())) if 'type' in df_jobs.columns else 'All'
     selected_priority = st.selectbox("Priority", ['All'] + sorted(df_jobs['priority'].unique().tolist())) if 'priority' in df_jobs.columns else 'All'
     selected_province = st.selectbox("Province", ['All'] + sorted(df_jobs['locationProvince'].unique().tolist())) if 'locationProvince' in df_jobs.columns else 'All'
+    
+    # New filter: Technician / Team Leader
+    team_leaders = get_team_leaders()
+    selected_team_leader = st.selectbox("Team Leader", ['All'] + team_leaders)
 
-# Filter DataFrame based on selected options
+# Apply filters to jobs dataframe
 filtered_df = df_jobs.copy()
 if selected_status != 'All':
     filtered_df = filtered_df[filtered_df['status'] == selected_status]
@@ -378,6 +375,10 @@ if selected_priority != 'All':
     filtered_df = filtered_df[filtered_df['priority'] == selected_priority]
 if selected_province != 'All':
     filtered_df = filtered_df[filtered_df['locationProvince'] == selected_province]
+# Filter jobs by selected team leader
+if selected_team_leader != 'All':
+    # This checks if the team leader's name is a substring of the job's technician_names field
+    filtered_df = filtered_df[filtered_df['technician_names'].str.contains(selected_team_leader, na=False)]
 
 # ---------------------- Tab Layout ---------------------- #
 tab_overview, tab_geo, tab_tech = st.tabs(["📊 Overview", "🗺️ Geographic Analysis", "👨‍🔧 Technician Performance"])
@@ -385,8 +386,6 @@ tab_overview, tab_geo, tab_tech = st.tabs(["📊 Overview", "🗺️ Geographic 
 # ---------------------- Tab 1: Overview ---------------------- #
 def show_overview():
     st.markdown("<h2 class='dashboard-title'>Job Overview Dashboard</h2>", unsafe_allow_html=True)
-    
-    # Metric computations
     total_jobs = len(filtered_df)
     period_length = (end_date - start_date).days + 1
     previous_start = start_date - timedelta(days=period_length)
@@ -394,7 +393,7 @@ def show_overview():
     previous_df = get_job_data(previous_start, previous_end)
     previous_total = len(previous_df)
     change_pct = ((total_jobs - previous_total) / previous_total * 100) if previous_total > 0 else 0
-    
+
     col1, col2, col3 = st.columns(3)
     with col1:
         st.metric(label="Total Jobs", value=f"{total_jobs:,}", delta=f"{change_pct:.1f}% vs previous period")
@@ -407,7 +406,6 @@ def show_overview():
         closed_jobs = filtered_df[filtered_df['status'].isin(closed_statuses)].shape[0]
         st.metric(label="Closed Jobs", value=f"{closed_jobs:,}", delta=f"{closed_jobs/total_jobs*100:.1f}%" if total_jobs > 0 else "0%")
     
-    # Today's job metrics
     today_jobs = filtered_df[filtered_df['createdAt'].dt.date == today]
     col1, col2 = st.columns(2)
     with col1:
@@ -416,20 +414,13 @@ def show_overview():
         today_closed = today_jobs[today_jobs['status'].isin(closed_statuses)].shape[0]
         st.metric(label="Closed Today's Jobs", value=f"{today_closed:,}")
     
-    # Charts: Job Status, Priority, and Type distributions
     col1, col2 = st.columns(2)
     with col1:
         if 'status' in filtered_df.columns:
             status_counts = filtered_df['status'].value_counts().reset_index()
             status_counts.columns = ['Status', 'Count']
-            colors = {
-                'WAITINGJOB': '#FFA500',
-                'WORKING': '#1E90FF',
-                'PENDING': '#FFD700',
-                'COMPLETED': '#32CD32',
-                'CLOSED': '#006400',
-                'CANCELLED': '#DC143C'
-            }
+            colors = {'WAITINGJOB': '#FFA500', 'WORKING': '#1E90FF', 'PENDING': '#FFD700',
+                      'COMPLETED': '#32CD32', 'CLOSED': '#006400', 'CANCELLED': '#DC143C'}
             status_fig = px.pie(status_counts, values='Count', names='Status', color='Status',
                                 color_discrete_map=colors, title='Job Status Distribution', hole=0.4)
             status_fig.update_traces(textposition='inside', textinfo='percent+label')
@@ -440,23 +431,19 @@ def show_overview():
         if 'priority' in filtered_df.columns:
             priority_counts = filtered_df['priority'].value_counts().reset_index()
             priority_counts.columns = ['Priority', 'Count']
-            priority_colors = {'HIGH': '#FF4500','MEDIUM': '#FFA500','LOW': '#32cd32'}
+            priority_colors = {'HIGH': '#FF4500', 'MEDIUM': '#FFA500', 'LOW': '#32cd32'}
             priority_fig = px.bar(priority_counts, x='Priority', y='Count', color='Priority',
                                   color_discrete_map=priority_colors, title='Job Priority Distribution')
-            priority_fig.update_layout(xaxis_title=None, yaxis_title="Number of Jobs",
-                                       margin=dict(t=50, b=0, l=0, r=0))
+            priority_fig.update_layout(xaxis_title=None, yaxis_title="Number of Jobs", margin=dict(t=50, b=0, l=0, r=0))
             st.plotly_chart(priority_fig, use_container_width=True)
     
-    # Additional chart: Job Type Distribution
     if 'type' in filtered_df.columns:
         type_counts = filtered_df['type'].value_counts().reset_index()
         type_counts.columns = ['Type', 'Count']
         type_fig = px.bar(type_counts, x='Type', y='Count', title='Job Type Distribution')
-        type_fig.update_layout(xaxis_title=None, yaxis_title="Number of Jobs",
-                               margin=dict(t=50, b=0, l=0, r=0))
+        type_fig.update_layout(xaxis_title=None, yaxis_title="Number of Jobs", margin=dict(t=50, b=0, l=0, r=0))
         st.plotly_chart(type_fig, use_container_width=True)
     
-    # Recent Jobs Table
     st.markdown("<h3>Recent Jobs</h3>", unsafe_allow_html=True)
     recent_cols = ['jobNo', 'status', 'type', 'priority', 'locationName', 'technician_names', 'createdAt']
     recent_jobs = filtered_df.sort_values('createdAt', ascending=False).head(10)
@@ -478,72 +465,11 @@ with tab_overview:
 
 # ---------------------- Tab 2: Geographic Analysis ---------------------- #
 def show_geographic_analysis():
-    # Province name mapping (if you want to use the local language mapping later)
     province_name_mapping = {
         "Mae Hong Son": "แม่ฮ่องสอน",
         "Chiang Mai": "เชียงใหม่",
         "Chiang Rai": "เชียงราย",
-        "Nan": "น่าน",
-        "Lamphun": "ลำพูน",
-        "Lampang": "ลำปาง",
-        "Phrae": "แพร่",
-        "Tak": "ตาก",
-        "Sukhothai": "สุโขทัย",
-        "Uttaradit": "อุตรดิตถ์",
-        "Kamphaeng Phet": "กำแพงเพชร",
-        "Phitsanulok": "พิษณุโลก",
-        "Phichit": "พิจิตร",
-        "Phetchabun": "เพชรบูรณ์",
-        "Uthai Thani": "อุทัยธานี",
-        "Nakhon Sawan": "นครสวรรค์",
-        "Nong Khai": "หนองคาย",
-        "Sakon Nakhon": "สกลนคร",
-        "Udon Thani": "อุดรธานี",
-        "Loei": "เลย",
-        "Khon Kaen": "ขอนแก่น",
-        "Chaiyaphum": "ชัยภูมิ",
-        "Nakhon Ratchasima": "นครราชสีมา",
-        "Nong Bua Lamphu": "หนองบัวลำภู",
-        "Mukdahan": "มุกดาหาร",
-        "Kalasin": "กาฬสินธุ์",
-        "Maha Sarakham": "มหาสารคาม",
-        "Roi Et": "ร้อยเอ็ด",
-        "Yasothon": "ยโสธร",
-        "Amnat Charoen": "อำนาจเจริญ",
-        "Nakhon Phanom": "นครพนม",
-        "Ubon Ratchathani": "อุบลราชธานี",
-        "Si Sa Ket": "ศรีสะเกษ",
-        "Surin": "สุรินทร์",
-        "Buriram": "บุรีรัมย์",
-        "Kanchanaburi": "กาญจนบุรี",
-        "Suphan Buri": "สุพรรณบุรี",
-        "Nakhon Pathom": "นครปฐม",
-        "Ratchaburi": "ราชบุรี",
-        "Samut Sakhon": "สมุทรสาคร",
-        "Samut Songkhram": "สมุทรสงคราม",
-        "Phetchaburi": "เพชรบุรี",
-        "Prachuap Khiri Khan": "ประจวบคีรีขันธ์",
-        "Nakhon Nayok": "นครนายก",
-        "Prachinburi": "ปราจีนบุรี",
-        "Chachoengsao": "ฉะเชิงเทรา",
-        "Sa Kaeo": "สระแก้ว",
-        "Chon Buri": "ชลบุรี",
-        "Rayong": "ระยอง",
-        "Chanthaburi": "จันทบุรี",
-        "Trat": "ตราด",
-        "Chumphon": "ชุมพร",
-        "Ranong": "ระนอง",
-        "Surat Thani": "สุราษฎร์ธานี",
-        "Phangnga": "พังงา",
-        "Phuket": "ภูเก็ต",
-        "Krabi": "กระบี่",
-        "Nakhon Si Thammarat": "นครศรีธรรมราช",
-        "Trang": "ตรัง",
-        "Phatthalung": "พัทลุง",
-        "Satun": "สตูล",
-        "Songkhla": "สงขลา",
-        "Pattani": "ปัตตานี",
-        "Yala": "ยะลา",
+        # ... (other mappings remain unchanged)
         "Narathiwat": "นราธิวาส"
     }
     
@@ -559,7 +485,7 @@ def show_geographic_analysis():
                                   title='Top 10 Provinces by Job Volume',
                                   orientation='h')
             province_fig.update_layout(xaxis_title="Number of Jobs", yaxis_title=None,
-                                       yaxis={'categoryorder':'total ascending'},
+                                       yaxis={'categoryorder': 'total ascending'},
                                        margin=dict(t=50, b=0, l=0, r=0))
             st.plotly_chart(province_fig, use_container_width=True)
     
@@ -572,11 +498,10 @@ def show_geographic_analysis():
                                   title='Top 10 Districts by Job Volume',
                                   orientation='h')
             district_fig.update_layout(xaxis_title="Number of Jobs", yaxis_title=None,
-                                       yaxis={'categoryorder':'total ascending'},
+                                       yaxis={'categoryorder': 'total ascending'},
                                        margin=dict(t=50, b=0, l=0, r=0))
             st.plotly_chart(district_fig, use_container_width=True)
     
-    # Job Distribution Map
     st.markdown("<h3>Job Distribution Map</h3>", unsafe_allow_html=True)
     m = folium.Map(location=[15.8700, 100.9925], zoom_start=6, tiles="CartoDB positron")
     has_coords = False
@@ -663,7 +588,6 @@ def show_geographic_analysis():
                 ).add_to(m)
     folium_static(m, width=1100, height=500)
     
-    # Heat Map: Job Distribution by Province and Status
     st.markdown("<h3>Geographic Heat Map by Job Status</h3>", unsafe_allow_html=True)
     if 'locationProvince' in filtered_df.columns:
         province_status = filtered_df.groupby(['locationProvince', 'status']).size().reset_index(name='count')
