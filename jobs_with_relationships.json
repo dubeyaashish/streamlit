@@ -1,0 +1,2735 @@
+[
+  {
+    "_id": "66574a0e804ef47da6e9b6e6",
+    "status": "WAITINGJOB",
+    "createdAt": "2024-05-29T15:30:22.519000",
+    "updatedAt": "2024-05-29T15:35:05.327000",
+    "createdByID": "6621218d37bc638ade30832d",
+    "type": "UN",
+    "appointmentTime": "2024-05-30T04:00:00",
+    "no": "UN2024052900001",
+    "priority": "LOW",
+    "jobLocationID": "6655b7948f1af1a27f03bf5b",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "6634705916782c28a9625b6f",
+      "664ff6354c8d92f0cf7a5d22",
+      "664ffc934c8d92f0cf7a5d3c"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "พรชัย",
+      "lastName": "",
+      "phone": "0950439982",
+      "email": ""
+    },
+    "joblocation": {
+      "_id": "6655b7948f1af1a27f03bf5b",
+      "createdAt": "2024-05-28T10:53:08.723000",
+      "updatedAt": "2024-05-28T10:53:08.723000",
+      "name": "บริษัท อเล็กซานเดอร์โฮเต็ล จำกัด-โรงแรมอเล็กซานเดอร์",
+      "status": "ACTIVE",
+      "customerID": "6655b2ff5cece8c6d432ff00",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "83/3 ถนนรามคำแหง ซ.1",
+      "subDistrict": "หัวหมาก",
+      "district": "บางกะปิ",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10240",
+      "contactFirstName": "พรชัย",
+      "contactLastName": "",
+      "contactPhone": "0950439982",
+      "contactEmail": "",
+      "contactNote": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.6423999,
+          13.759073
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "6655b2ff5cece8c6d432ff00",
+        "createdAt": "2024-05-28T10:33:35.528000",
+        "updatedAt": "2024-10-11T09:09:17.492000",
+        "status": "ACTIVE",
+        "code": "S130101",
+        "customerType": "INTERNAL",
+        "phone": "22901234",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "6655b2ff5cece8c6d432feff",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "668d18048a8922448e7d5a9d"
+        ],
+        "billingLocationRefID": "6655b2ff5cece8c6d432feff"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "6634705916782c28a9625b6f",
+        "createdAt": "2024-05-03T05:04:25.693000",
+        "updatedAt": "2025-04-05T06:23:05.692000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "เจษฎา",
+        "lastName": "จันทร์ทอง",
+        "imageID": "664f2f581ee79318a621d65f",
+        "code": "100399",
+        "idCard": "1279800142793",
+        "position": "TECHNICIAN",
+        "birthDate": "2001-12-23T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663462e516782c28a962577c",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "6634705916782c28a9625b6e",
+        "technicianWorkConditionID": "6634705916782c28a9625b6d",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "12/24/2001",
+          "subDistrict": "บ้านใหม่หนองไทร",
+          "district": "อรัญประเทศ",
+          "province": "สระแก้ว",
+          "postalCode": "27120"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.4960733333333,
+            13.75907666666667
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS13d9e82717b3ffc86cd30cb76ad4980b"
+      },
+      {
+        "_id": "664ff6354c8d92f0cf7a5d22",
+        "createdAt": "2024-05-24T02:06:45.866000",
+        "updatedAt": "2025-04-01T08:02:24.285000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "ฉัตรเกล้า",
+        "lastName": "เลาหพรทรัพย์",
+        "imageID": "664ff54f4c8d92f0cf7a5d1c",
+        "code": "0100127",
+        "idCard": "1103100245587",
+        "position": "TEAM_LEADER",
+        "birthDate": "1994-04-06T00:00:00",
+        "gender": "FEMALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "664ff6354c8d92f0cf7a5d21",
+        "technicianWorkConditionID": "664ff6354c8d92f0cf7a5d20",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "-",
+          "subDistrict": "บางนา",
+          "district": "เขตบางนา",
+          "province": "กรุงเทพมหานคร",
+          "postalCode": "10260"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.5746789355869,
+            13.79545569388554
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BS1d52b4b857a70cb438c448e4102eb35f",
+        "technicianLeadID": null
+      },
+      {
+        "_id": "664ffc934c8d92f0cf7a5d3c",
+        "createdAt": "2024-05-24T02:33:55.964000",
+        "updatedAt": "2025-04-01T10:59:25.295000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "ธนเวทย์",
+        "lastName": "จินะโพ",
+        "imageID": "67eb9ebafa50ebf9109a4c7b",
+        "code": "0100130",
+        "idCard": "1539900331951",
+        "position": "TEAM_LEADER",
+        "birthDate": "1991-09-23T00:00:00",
+        "gender": "FEMALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "664ffc934c8d92f0cf7a5d3b",
+        "technicianWorkConditionID": "664ffc934c8d92f0cf7a5d3a",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "68 หมู่ 1",
+          "subDistrict": "ผักขวง",
+          "district": "ทองแสนขัน",
+          "province": "อุตรดิตถ์",
+          "postalCode": "53230"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.56066131,
+            13.73884931323972
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BS6e492178b5cd9f839bd02f1cfbd14253",
+        "technicianLeadID": null
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "66574a8d804ef47da6e9b6fa",
+    "status": "WAITINGJOB",
+    "createdAt": "2024-05-29T15:32:29.117000",
+    "updatedAt": "2024-05-29T15:34:45.872000",
+    "createdByID": "6621218d37bc638ade30832d",
+    "type": "IN",
+    "appointmentTime": "2024-05-30T05:00:00",
+    "no": "IN2024052900001",
+    "priority": "LOW",
+    "jobLocationID": "6655b7948f1af1a27f03bf5b",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "663460a016782c28a9625718",
+      "664ff6354c8d92f0cf7a5d22",
+      "664ffc934c8d92f0cf7a5d3c"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "พรชัย",
+      "lastName": "",
+      "phone": "0950439982",
+      "email": ""
+    },
+    "joblocation": {
+      "_id": "6655b7948f1af1a27f03bf5b",
+      "createdAt": "2024-05-28T10:53:08.723000",
+      "updatedAt": "2024-05-28T10:53:08.723000",
+      "name": "บริษัท อเล็กซานเดอร์โฮเต็ล จำกัด-โรงแรมอเล็กซานเดอร์",
+      "status": "ACTIVE",
+      "customerID": "6655b2ff5cece8c6d432ff00",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "83/3 ถนนรามคำแหง ซ.1",
+      "subDistrict": "หัวหมาก",
+      "district": "บางกะปิ",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10240",
+      "contactFirstName": "พรชัย",
+      "contactLastName": "",
+      "contactPhone": "0950439982",
+      "contactEmail": "",
+      "contactNote": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.6423999,
+          13.759073
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "6655b2ff5cece8c6d432ff00",
+        "createdAt": "2024-05-28T10:33:35.528000",
+        "updatedAt": "2024-10-11T09:09:17.492000",
+        "status": "ACTIVE",
+        "code": "S130101",
+        "customerType": "INTERNAL",
+        "phone": "22901234",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "6655b2ff5cece8c6d432feff",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "668d18048a8922448e7d5a9d"
+        ],
+        "billingLocationRefID": "6655b2ff5cece8c6d432feff"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "663460a016782c28a9625718",
+        "createdAt": "2024-05-03T03:57:20.813000",
+        "updatedAt": "2025-04-04T05:22:48.510000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "ปฏิวัติ",
+        "lastName": "สรุปราษฎร์",
+        "imageID": "6650336033b53582712fb372",
+        "code": "100008",
+        "idCard": "3170300080186",
+        "position": "TEAM_LEADER",
+        "birthDate": "1977-06-18T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "663460a016782c28a9625717",
+        "technicianWorkConditionID": "663460a016782c28a9625716",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "67/1 ซอย 8 ถนน นิคมลำตะคลอง",
+          "subDistrict": "หนองสาหร่าย",
+          "district": "ปากช่อง",
+          "province": "นครราชสีมา",
+          "postalCode": "30130"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.5994716666667,
+            13.91658
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BSbac095123da1379b04df111086e41c81",
+        "technicianLeadID": null
+      },
+      {
+        "_id": "664ff6354c8d92f0cf7a5d22",
+        "createdAt": "2024-05-24T02:06:45.866000",
+        "updatedAt": "2025-04-01T08:02:24.285000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "ฉัตรเกล้า",
+        "lastName": "เลาหพรทรัพย์",
+        "imageID": "664ff54f4c8d92f0cf7a5d1c",
+        "code": "0100127",
+        "idCard": "1103100245587",
+        "position": "TEAM_LEADER",
+        "birthDate": "1994-04-06T00:00:00",
+        "gender": "FEMALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "664ff6354c8d92f0cf7a5d21",
+        "technicianWorkConditionID": "664ff6354c8d92f0cf7a5d20",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "-",
+          "subDistrict": "บางนา",
+          "district": "เขตบางนา",
+          "province": "กรุงเทพมหานคร",
+          "postalCode": "10260"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.5746789355869,
+            13.79545569388554
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BS1d52b4b857a70cb438c448e4102eb35f",
+        "technicianLeadID": null
+      },
+      {
+        "_id": "664ffc934c8d92f0cf7a5d3c",
+        "createdAt": "2024-05-24T02:33:55.964000",
+        "updatedAt": "2025-04-01T10:59:25.295000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "ธนเวทย์",
+        "lastName": "จินะโพ",
+        "imageID": "67eb9ebafa50ebf9109a4c7b",
+        "code": "0100130",
+        "idCard": "1539900331951",
+        "position": "TEAM_LEADER",
+        "birthDate": "1991-09-23T00:00:00",
+        "gender": "FEMALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "664ffc934c8d92f0cf7a5d3b",
+        "technicianWorkConditionID": "664ffc934c8d92f0cf7a5d3a",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "68 หมู่ 1",
+          "subDistrict": "ผักขวง",
+          "district": "ทองแสนขัน",
+          "province": "อุตรดิตถ์",
+          "postalCode": "53230"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.56066131,
+            13.73884931323972
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BS6e492178b5cd9f839bd02f1cfbd14253",
+        "technicianLeadID": null
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "6657e3b4275b387698e00d88",
+    "status": "WORKING",
+    "createdAt": "2024-05-30T02:25:56.350000",
+    "updatedAt": "2024-05-30T09:24:16.592000",
+    "createdByID": "6621218d37bc638ade30832d",
+    "type": "UN",
+    "appointmentTime": "2024-05-30T07:00:00",
+    "no": "UN2024053000001",
+    "priority": "LOW",
+    "jobLocationID": "6657e137275b387698e00cba",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "66346a0816782c28a96259aa",
+      "664235eda4a95e67f564523f"
+    ],
+    "isSendRequest": true,
+    "isEditable": true,
+    "adminRequestIDs": [
+      "6621218d37bc638ade30832b",
+      "6621218d37bc638ade30832d"
+    ],
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "จันทร์จิรา",
+      "lastName": "",
+      "phone": "0822223031",
+      "email": ""
+    },
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          101.04667743,
+          13.42906847
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          101.041,
+          13.0296
+        ]
+      },
+      "length": 54.875
+    },
+    "startWorkingTime": "2024-05-30T05:01:13.588000",
+    "joblocation": {
+      "_id": "6657e137275b387698e00cba",
+      "createdAt": "2024-05-30T02:15:19.003000",
+      "updatedAt": "2024-05-30T02:15:19.003000",
+      "name": "บริษัท แหลมฉบัง อินเตอร์เนชั่นแนล คันทรีคลับ จํากัด",
+      "status": "ACTIVE",
+      "customerID": "664ee159d0f42a127ade545d",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "106/8 หมู่ 4 ",
+      "subDistrict": "บ่อวิน",
+      "district": "ศรีราชา",
+      "province": "ชลบุรี",
+      "postalCode": "20230",
+      "contactFirstName": "จันทร์จิรา",
+      "contactLastName": "",
+      "contactPhone": "0822223031",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          101.041,
+          13.0296
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "664ee159d0f42a127ade545d",
+        "createdAt": "2024-05-23T06:25:29.859000",
+        "updatedAt": "2024-10-11T09:14:29.677000",
+        "status": "ACTIVE",
+        "code": "S150101",
+        "customerType": "INTERNAL",
+        "phone": "0387273635",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "664ee159d0f42a127ade545c",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "6616300b899c6b28afd7fa45",
+          "6616300b899c6b28afd7fa47",
+          "6616300b899c6b28afd7fa48",
+          "6616300b899c6b28afd7fa49"
+        ],
+        "billingLocationRefID": "664ee159d0f42a127ade545c"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "66346a0816782c28a96259aa",
+        "createdAt": "2024-05-03T04:37:28.321000",
+        "updatedAt": "2025-04-04T06:32:44.244000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "กฤษฎา",
+        "lastName": "ประสิทธิผล",
+        "imageID": "664f2fb11ee79318a621d811",
+        "code": "100052",
+        "idCard": "1269900095291",
+        "position": "TECHNICIAN",
+        "birthDate": "1989-07-18T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663460a016782c28a9625718",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "66346a0816782c28a96259a9",
+        "technicianWorkConditionID": "66346a0816782c28a96259a8",
+        "totalScore": 20,
+        "totalJobReviewed": 1,
+        "address": {
+          "address": "7/19/1989",
+          "subDistrict": "พรหมณี",
+          "district": "เมืองนครนายก",
+          "province": "นครนายก",
+          "postalCode": "26000"
+        },
+        "score": {
+          "time": 4,
+          "manner": 4,
+          "knowledge": 4,
+          "overall": 4,
+          "recommend": 4
+        },
+        "avgScore": {
+          "time": 4.0,
+          "manner": 4.0,
+          "knowledge": 4.0,
+          "overall": 4.0,
+          "recommend": 4.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            102.28883481,
+            12.06174375
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS2bfb87800cc281fc44cd4b0873ab8f26",
+        "customerReviewIDs": [
+          "66e8ee937d1b6664b79363dc"
+        ]
+      },
+      {
+        "_id": "664235eda4a95e67f564523f",
+        "createdAt": "2024-05-13T15:46:53.180000",
+        "updatedAt": "2025-03-25T02:55:09.457000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "รัฐฎาภรณ์",
+        "lastName": "ประทีปโชติกุล",
+        "imageID": "66423514a4a95e67f5645154",
+        "code": "0100064",
+        "idCard": "1100701283618",
+        "position": "TEAM_LEADER",
+        "birthDate": "1990-11-03T00:00:00",
+        "gender": "FEMALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64b6104ef049c6a8f04ce210",
+        "contactPersonID": "664235eda4a95e67f564523e",
+        "technicianWorkConditionID": "664235eda4a95e67f564523d",
+        "totalScore": 15,
+        "totalJobReviewed": 1,
+        "address": {
+          "address": "98/319 หมู่ 7",
+          "subDistrict": "มหาสวัสดิ์",
+          "district": "บางกรวย",
+          "province": "นนทบุรี",
+          "postalCode": "11130"
+        },
+        "score": {
+          "time": 3,
+          "manner": 3,
+          "knowledge": 3,
+          "overall": 3,
+          "recommend": 3
+        },
+        "avgScore": {
+          "time": 3.0,
+          "manner": 3.0,
+          "knowledge": 3.0,
+          "overall": 3.0,
+          "recommend": 3.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.5745514285442,
+            13.79546853957708
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BS6d45497adfee99ba3f6fd63af3ec0ad3",
+        "technicianLeadID": null,
+        "customerReviewIDs": [
+          "668250a91d52f63211171246"
+        ]
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "6657e592275b387698e00e0d",
+    "status": "WORKING",
+    "createdAt": "2024-05-30T02:33:54.524000",
+    "updatedAt": "2024-05-31T06:17:18.141000",
+    "createdByID": "6621218d37bc638ade30832d",
+    "type": "IN",
+    "appointmentTime": "2024-05-31T03:30:00",
+    "no": "IN2024053000001",
+    "priority": "LOW",
+    "jobLocationID": "6657e137275b387698e00cba",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "66346a0816782c28a96259aa",
+      "664235eda4a95e67f564523f"
+    ],
+    "isSendRequest": true,
+    "isEditable": true,
+    "adminRequestIDs": [
+      "6621218d37bc638ade30832d",
+      "664f2ec71ee79318a621d65a"
+    ],
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "จันทร์จิรา",
+      "lastName": "",
+      "phone": "0822223031",
+      "email": ""
+    },
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          101.05789232,
+          13.05823923
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          101.041,
+          13.0296
+        ]
+      },
+      "length": 6.791
+    },
+    "startWorkingTime": "2024-05-31T01:25:08.510000",
+    "joblocation": {
+      "_id": "6657e137275b387698e00cba",
+      "createdAt": "2024-05-30T02:15:19.003000",
+      "updatedAt": "2024-05-30T02:15:19.003000",
+      "name": "บริษัท แหลมฉบัง อินเตอร์เนชั่นแนล คันทรีคลับ จํากัด",
+      "status": "ACTIVE",
+      "customerID": "664ee159d0f42a127ade545d",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "106/8 หมู่ 4 ",
+      "subDistrict": "บ่อวิน",
+      "district": "ศรีราชา",
+      "province": "ชลบุรี",
+      "postalCode": "20230",
+      "contactFirstName": "จันทร์จิรา",
+      "contactLastName": "",
+      "contactPhone": "0822223031",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          101.041,
+          13.0296
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "664ee159d0f42a127ade545d",
+        "createdAt": "2024-05-23T06:25:29.859000",
+        "updatedAt": "2024-10-11T09:14:29.677000",
+        "status": "ACTIVE",
+        "code": "S150101",
+        "customerType": "INTERNAL",
+        "phone": "0387273635",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "664ee159d0f42a127ade545c",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "6616300b899c6b28afd7fa45",
+          "6616300b899c6b28afd7fa47",
+          "6616300b899c6b28afd7fa48",
+          "6616300b899c6b28afd7fa49"
+        ],
+        "billingLocationRefID": "664ee159d0f42a127ade545c"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "66346a0816782c28a96259aa",
+        "createdAt": "2024-05-03T04:37:28.321000",
+        "updatedAt": "2025-04-04T06:32:44.244000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "กฤษฎา",
+        "lastName": "ประสิทธิผล",
+        "imageID": "664f2fb11ee79318a621d811",
+        "code": "100052",
+        "idCard": "1269900095291",
+        "position": "TECHNICIAN",
+        "birthDate": "1989-07-18T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663460a016782c28a9625718",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "66346a0816782c28a96259a9",
+        "technicianWorkConditionID": "66346a0816782c28a96259a8",
+        "totalScore": 20,
+        "totalJobReviewed": 1,
+        "address": {
+          "address": "7/19/1989",
+          "subDistrict": "พรหมณี",
+          "district": "เมืองนครนายก",
+          "province": "นครนายก",
+          "postalCode": "26000"
+        },
+        "score": {
+          "time": 4,
+          "manner": 4,
+          "knowledge": 4,
+          "overall": 4,
+          "recommend": 4
+        },
+        "avgScore": {
+          "time": 4.0,
+          "manner": 4.0,
+          "knowledge": 4.0,
+          "overall": 4.0,
+          "recommend": 4.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            102.28883481,
+            12.06174375
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS2bfb87800cc281fc44cd4b0873ab8f26",
+        "customerReviewIDs": [
+          "66e8ee937d1b6664b79363dc"
+        ]
+      },
+      {
+        "_id": "664235eda4a95e67f564523f",
+        "createdAt": "2024-05-13T15:46:53.180000",
+        "updatedAt": "2025-03-25T02:55:09.457000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "รัฐฎาภรณ์",
+        "lastName": "ประทีปโชติกุล",
+        "imageID": "66423514a4a95e67f5645154",
+        "code": "0100064",
+        "idCard": "1100701283618",
+        "position": "TEAM_LEADER",
+        "birthDate": "1990-11-03T00:00:00",
+        "gender": "FEMALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64b6104ef049c6a8f04ce210",
+        "contactPersonID": "664235eda4a95e67f564523e",
+        "technicianWorkConditionID": "664235eda4a95e67f564523d",
+        "totalScore": 15,
+        "totalJobReviewed": 1,
+        "address": {
+          "address": "98/319 หมู่ 7",
+          "subDistrict": "มหาสวัสดิ์",
+          "district": "บางกรวย",
+          "province": "นนทบุรี",
+          "postalCode": "11130"
+        },
+        "score": {
+          "time": 3,
+          "manner": 3,
+          "knowledge": 3,
+          "overall": 3,
+          "recommend": 3
+        },
+        "avgScore": {
+          "time": 3.0,
+          "manner": 3.0,
+          "knowledge": 3.0,
+          "overall": 3.0,
+          "recommend": 3.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.5745514285442,
+            13.79546853957708
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BS6d45497adfee99ba3f6fd63af3ec0ad3",
+        "technicianLeadID": null,
+        "customerReviewIDs": [
+          "668250a91d52f63211171246"
+        ]
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "666142be670ae6549cb677db",
+    "status": "DONE",
+    "createdAt": "2024-06-06T05:01:50.180000",
+    "updatedAt": "2024-06-19T08:52:09.984000",
+    "createdByID": "6621218d37bc638ade30832f",
+    "type": "UN",
+    "appointmentTime": "2024-06-06T02:00:00",
+    "no": "UN2024060600001",
+    "priority": "LOW",
+    "jobLocationID": "663b3b673d2b6faf8e5c5ac7",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "66346e4e16782c28a9625a8a"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "พี่ธร",
+      "lastName": "",
+      "phone": "0922940096",
+      "email": ""
+    },
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.2716832,
+          13.5710725
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.2735412,
+          13.5747143
+        ]
+      },
+      "length": 0.874
+    },
+    "startWorkingTime": "2024-06-06T05:03:51.169000",
+    "customerSignature": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+EAAAJSCAYAAACskMSJAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3U+S3EZ6N+BShA/A2XknMsJ7UyegdIKJOUFTNxieYNwnkL4TiH2CsU+g4QnIvRds77yTvHeEPiclSKVSVePNRCKRCTwVodCMGsg/T2YB+QNQVZ/99NNPP528CBAgQIAAAQIECBAgQIAAgdUFPhPCVzdWAQECBAgQIECAAAECBAgQ+CQghJsIBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAAECjQSE8EbQqiFAgAABAgQIECBAgAABAkK4OUCAAAECBAgQIECAAAECBBoJCOGNoFVDgAABAgQIECBAgAABAgSEcHOAAAECBAgQIECAAAECBAg0EhDCG0GrhgABAgQIECBAgAABAgQICOHmAAECBAgQIECAAAECBAgQaCQghDeCVg0BAgQIECBAgAABAgQIEBDCzQECBAgQIECAAAECBAgQINBIQAhvBK0aAgQIECBAgAABAgQIECAghJsDBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAAECjQSE8EbQqiFAgAABAgQIECBAgAABAkK4OUCAAAECBAgQIECAAAECBBoJCOGNoFVDgAABAgQIECBAgAABAgSEcHOAAAECBAgQIECAAAECBAg0EhDCG0GrhgABAgQIECBAgAABAgQICOHmAAECBAgQIECAAAECBAgQaCQghDeCVg0BAgQIECBAgAABAgQIEBDCzQECBAgQIECAAAECBAgQINBIQAhvBK0aAgQIECBAgAABAgQIECAghJsDBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAAECjQSE8EbQqiFAgAABAgQIECBAgAABAkK4OUCAAAECBAgQIECAAAECBBoJCOGNoFVDgAABAgQIECBAgAABAgSEcHOAAAECBAgQIECAAAECBAg0EhDCG0GrhgABAgQIECBAgAABAgQICOHmAAECBAgQIECAAAECBAgQaCQghDeCVg0BAgQIECBAgAABAgQIEBDCzQECBAgQIECAAAECBAgQINBIQAhvBK0aAgQIECBAgAABAgQIECAghJsDBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAAECjQSE8EbQqiFAgAABAgQIECBAgAABAkK4OUCAAAECBAgQIECAAAECBBoJCOGNoFVDgAABAgQIECBAgAABAgSEcHOAAAECBAgQIECAAAECBAg0EhDCG0GrhgABAgQIECBAgAABAgQICOHmAAECBAgQIECAAAECBAgQaCQghDeCVg0BAgQIECBAgAABAgQIEBDCzQECBAgQIECAAAECBAgQINBIQAhvBK0aAgQIECBAgAABAgQIECAghJsDBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAAECjQSE8EbQqiFAgAABAgQIECBAgAABAkK4OUCAAAECBAgQIECAAAECBBoJCOGNoFVDgAABAgQIECBAgAABAgSEcHOAAAECBAgQIECAAAECBAg0EhDCG0GrhgABAgQIECBAgAABAgQICOHmAAECBAgQIECAAAECBAgQaCQghDeCVg0BAgQIECBAgAABAgQIEBDCzQECBAgQIECAAAECBAgQINBIQAhvBK0aAgQIECBAgAABAgQIECAghJsDBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAAECjQSE8EbQqiFAgAABAgQIECBAgAABAkK4OUCAAAECBAgQIECAAAECBBoJCOGNoFVDgAABAgQIECBAgAABAgSEcHOAAAECBAgQIECAAAECBAg0EhDCG0GrhgABAgQIECBAgAABAgQICOHmAAECBAgQIECAAAECBAgQaCQghDeCVg0BAgQIECBAgAABAgQIEBDCzQECBAgQIECAAAECBAgQINBIQAhvBK0aAgQIECBAgAABAgQIECAghJsDBAgQIECAAAECBAgQIECgkYAQ3ghaNQQIECBAgAABAgQIECBAQAg3BwgQIECAAAECBAgQIECAQCMBIbwRtGoIECBAgAABAgQIECBAgIAQbg4QIECAAAECBAgQIECAAIFGAkJ4I2jVECBAgAABAgQIECBAgAABIdwcIECAAAECBAgQIECAAIHNBf7xj3+c7u/vf23Hq1evPv3vf/u3f9u8bTUbIITX1FQWAQIECBAgQIAAAQIECGQLpKB9HsDPC/jyyy9Pf/vb307p33t4CeF7GEV9IECAAAECBAgQIECAwKACTwXw8y799NNPg/bw980WwncxjDpBgAABAgQIECBAgACB8QSiATz1LN0J//7778fr5EWLhfDhh1AHCBAgQIAAAQIECBAgMJ5A+gz4V199ldXwPdwNF8KzhtzGBAgQIECAAAECBAgQILBUoCSApzrTnfDRPxsuhC+dPfYnQIAAAQIECBAgQIAAgSyBzz77LGv7aWMhvIjNTgQIECBAgAABAgQIECBwRIHSO+BC+BFniz4TIECAAAECBAgQIECAQLHA0gCeKvaZ8GJ+OxIgQIAAAQIECBAgQIDAkQRKH0GfjNJvhadvUx/95TPho4+g9hMgQIAAAQIECBAgQKBzgfQt6OlOeOnr7u7u9Pbt29Ldu9pPCO9qODSGAAECBAgQIECAAAEC+xFIwfv+/n5RAH/16tWi/XvTFMJ7GxHtIUCAAAECBAgQIECAwE4Elt4Bf/78+enjx4870fi5G0L4roZTZwgQIECA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BAgQIECAAAECBAgI4eYAAQIECBAgQIAAAQIECBBoJCCEN4JWDQECBAgQIECAAAECBAgQEMLNAQIECBAgQIAAAQIECBAg0EhACG8ErRoCBAgQIECAAAECBAgQICCEmwMECBAgQIAAAQIECBAgQKCRgBDeCFo1BAgQIECAAAECBAgQIEBACDcHCBAgQIAAAQIECBAgQIBAIwEhvBG0aggQIECAAAECBAgQIECAgBBuDhAgQIAAAQIECBAgQIAAgUYCQngjaNUQIECAAAECBAgQIECAAAEh3BwgQIAAAQIECBAgQIAAAQKNBITwRtCqIUCAAAECBAgQIECAAAECQrg5QIAAAQIECBAgQIAAAQIEGgkI4Y2gVUOAAAECBAgQIECAAAECBIRwc4AAAQIECBAgQIAAAQIECDQSEMIbQauGAAECBAgQIECAAAECBAgI4eYAAQIECBAgQIAAAQIECBBoJCCEN4JWDQECBAgQIECAAAECBAgQEMLNAQIECBAgQIAAAQIECBAg0EhACG8ErRoCBAgQIECAAAECBAgQICCEmwMECBAgQIAAAQIECBAgQKCRgBDeCFo1BAgQIECAAAECBAgQIEBACDcHCBAgQIAAAQIECBAgQIBAIwEhvBG0aggQIECAAAECBAgQIECAgBBuDhAgQIAAAQIECBAgQIAAgUYCQngjaNUQIECAAAECBAgQIECAAAEh3BwgQIAAAQIECBAgQIAAAQKNBITwRtCqIUCAAAECBAgQIECAAAECQrg5QIAAAQIECBAgQIAAAQIEGgkI4Y2gVUOAAAECBAgQIECAAAECBIRwc4AAAQIECBAgQIAAAQIECDQSEMIbQauGAAECBAgQIECAAAECBAgI4eYAAQIECBAgQIAAAQIECBBoJCCEN4JWDQECBAgQIECAAAECBAgQEMLNAQIECBAgQIAAAQIECBAg0EhACG8ErRoCBAgQIECAAAECBAgQICCEmwMECBAgQIAAAQIECBAgQKCRgBDeCFo1BAgQIECAAAECBAgQIEBACDcHCBAgQIAAAQIECBAgQIBAIwEhvBG0aggQIECAAAECBAgQIECAgBBuDhAgQIAAAQIECBAgQIAAgUYCQngjaNUQIECAAAECBAgQIECAAAEh3BwgQIAAAQIECBAgQIAAAQKNBITwRtCqIUCAAAECBAgQIECAAAECQrg5QIAAAQIECBAgQIAAAQIEGgkI4Y2gVUOAAAECBAgQIECAAAECBIRwc4AAAQIECBAgQIAAAQIECDQSEMIbQauGAAECBAgQIECAAAECBAgI4eYAAQIECBAgQIAAAQIECBBoJCCEN4JWDQECBAgQIECAAAECBAgQEMLNAQIECBAgQIAAAQIECBAg0EhACG8ErRoCBAgQIECAAAECBAgQICCEmwMECBAgQIAAAQIECBAgQKCRgBDeCFo1BAgQIECAAAECBAgQIEBACDcHCBAgQIAAAQIECBAgQIBAIwEhvBG0aggQIECAAAECBAgQIECAgBBuDhAgQIAAAQIECBAgQIAAgUYCQngjaNUQIECAAAECBAgQIECAAAEh3BwgQIAAAQIECBAgQIAAAQKNBITwRtCqIUCAAAECBAgQIECAAAECQrg5QIAAAQIECBAgQIAAAQIEGgkI4Y2gVUOAAAECBAgQIECAAAECBIRwc4AAAQIECBAgQIAAAQIECDQSEMIbQauGAAECBAgQIECAAAECBAgI4eYAAQIECBAgQIAAAQIECBBoJCCEN4JWDQECBAgQIECAAAECBAgQEMLNAQIECBAgQIAAAQIECBAg0EhACG8ErRoCBAgQIECAAAECBAgQICCEmwMECBAgQIAAAQIECBAgQKCRgBDeCFo1BAgQIECAAAECBAgQIEBACDcHCBAgQIAAAQIECBAgQIBAIwEhvBG0aggQIECAAAECBAgQIECAgBBuDhAgQIAAAQIECBAgQIAAgUYCQngjaNUQIECAAAECBAgQIECAAAEh3BwgQIAAAQIECBAgQIAAAQKNBITwRtCqIUCAAAECBAgQIECAAAECQrg5QIAAAQIECBAgQIAAAQIEGgkI4Y2gVUOAAAECBAgQIECAAAECBIRwc4AAAQIECBAgQIAAAQIECDQSEMIbQauGAAECBAgQIECAAAECBAgI4eYAAQIECBAgQIAAAQIECBBoJCCEN4JWDQECBAgQIECAAAECBAgQEMLNAQIECBAgQIAAAQIECBAg0Ejg/wNqoKAXL0uc8AAAAABJRU5ErkJggg==",
+    "customerSignatureValidate": "ลัคณา",
+    "endWorkingTime": "2024-06-19T08:52:10.015000",
+    "joblocation": {
+      "_id": "663b3b673d2b6faf8e5c5ac7",
+      "createdAt": "2024-05-08T08:44:23.220000",
+      "updatedAt": "2024-05-08T08:44:23.220000",
+      "name": "บริษัท ไทยรวมสินพัฒนาอุตสาหกรรม จำกัด สาขาที่ 1-ไทยรวมสิน (โรงปลากระป๋อง)",
+      "status": "ACTIVE",
+      "customerID": "663b1cff9f98a86c6db2564c",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "30/2 หมู่ 8 ถนนเศรษฐกิจ",
+      "subDistrict": "ท่าทราย",
+      "district": "เมืองสมุทรสาคร",
+      "province": "สมุทรสาคร",
+      "postalCode": "74000",
+      "contactFirstName": "พี่ธร",
+      "contactLastName": "",
+      "contactPhone": "0922940096",
+      "contactEmail": "",
+      "contactNote": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.2735412,
+          13.5747143
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "663b1cff9f98a86c6db2564c",
+        "createdAt": "2024-05-08T06:34:39.114000",
+        "updatedAt": "2024-06-28T15:39:51.478000",
+        "status": "ACTIVE",
+        "code": "1000004",
+        "customerType": "CLIENT_COMPANY",
+        "phone": "022901288",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "663b1cff9f98a86c6db2564b",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "6616300b899c6b28afd7fa45",
+          "6616300b899c6b28afd7fa46",
+          "6616300b899c6b28afd7fa47",
+          "6616300b899c6b28afd7fa48",
+          "6616300b899c6b28afd7fa49",
+          "6616300c899c6b28afd7fa56"
+        ],
+        "billingLocationRefID": "663b1cff9f98a86c6db2564b"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "66346e4e16782c28a9625a8a",
+        "createdAt": "2024-05-03T04:55:42.383000",
+        "updatedAt": "2025-04-04T08:48:49.076000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "พรมลิขิต",
+        "lastName": "กิตติชัย",
+        "imageID": "664f2f821ee79318a621d73c",
+        "code": "100062",
+        "idCard": "1461000159170",
+        "position": "TECHNICIAN",
+        "birthDate": "1993-02-12T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663462e516782c28a962577c",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "66346e4e16782c28a9625a89",
+        "technicianWorkConditionID": "66346e4e16782c28a9625a88",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "110 หมู่ 12",
+          "subDistrict": "นาทัน",
+          "district": "คำม่วง",
+          "province": "กาฬสินธุ์",
+          "postalCode": "46180"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.9294853,
+            13.3367266
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BSb95c386b2a81e0fd48ec80ea92fab51d"
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "6661739accbb3f52218f811b",
+    "status": "WORKING",
+    "createdAt": "2024-06-06T08:30:18.465000",
+    "updatedAt": "2024-06-06T08:41:07.614000",
+    "createdByID": "6621218d37bc638ade30832f",
+    "type": "PM",
+    "appointmentTime": "2024-06-06T08:40:56",
+    "no": "PM2024060600001",
+    "priority": "LOW",
+    "jobLocationID": "66616d45a897ae065d12f973",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "6634705916782c28a9625b6f"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "contractID": "66617377ccbb3f52218f811a",
+    "isQcJob": false,
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "customerContact": {
+      "firstName": "คุณพัด",
+      "lastName": "",
+      "phone": "0924210220",
+      "email": ""
+    },
+    "changeAppointmentTimeNote": "เซอร์วิสแล้ว แจ้งงานย้อนหลัง",
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.5746099803649,
+          13.79548025730482
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.7621,
+          13.6582
+        ]
+      },
+      "length": 42.385
+    },
+    "startWorkingTime": "2024-06-06T08:37:01.955000",
+    "joblocation": {
+      "_id": "66616d45a897ae065d12f973",
+      "createdAt": "2024-06-06T08:03:17.733000",
+      "updatedAt": "2024-06-06T08:17:27.195000",
+      "name": "บริษัท อินเตอร์เนชั่นแนล แลบบอราทอรีส์ จำกัด - อินเตอร์แลบ",
+      "status": "ACTIVE",
+      "customerID": "663b1cff9f98a86c6db2564c",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "62 หมู่ 8 ถนนบางนา-ตราด",
+      "subDistrict": "บางโฉลง",
+      "district": "บางพลี",
+      "province": "สมุทรปราการ",
+      "postalCode": "10540",
+      "contactFirstName": "คุณพัด",
+      "contactLastName": "",
+      "contactPhone": "0924210220",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.7621,
+          13.6582
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "663b1cff9f98a86c6db2564c",
+        "createdAt": "2024-05-08T06:34:39.114000",
+        "updatedAt": "2024-06-28T15:39:51.478000",
+        "status": "ACTIVE",
+        "code": "1000004",
+        "customerType": "CLIENT_COMPANY",
+        "phone": "022901288",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "663b1cff9f98a86c6db2564b",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "6616300b899c6b28afd7fa45",
+          "6616300b899c6b28afd7fa46",
+          "6616300b899c6b28afd7fa47",
+          "6616300b899c6b28afd7fa48",
+          "6616300b899c6b28afd7fa49",
+          "6616300c899c6b28afd7fa56"
+        ],
+        "billingLocationRefID": "663b1cff9f98a86c6db2564b"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "6634705916782c28a9625b6f",
+        "createdAt": "2024-05-03T05:04:25.693000",
+        "updatedAt": "2025-04-05T06:23:05.692000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "เจษฎา",
+        "lastName": "จันทร์ทอง",
+        "imageID": "664f2f581ee79318a621d65f",
+        "code": "100399",
+        "idCard": "1279800142793",
+        "position": "TECHNICIAN",
+        "birthDate": "2001-12-23T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663462e516782c28a962577c",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "6634705916782c28a9625b6e",
+        "technicianWorkConditionID": "6634705916782c28a9625b6d",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "12/24/2001",
+          "subDistrict": "บ้านใหม่หนองไทร",
+          "district": "อรัญประเทศ",
+          "province": "สระแก้ว",
+          "postalCode": "27120"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.4960733333333,
+            13.75907666666667
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS13d9e82717b3ffc86cd30cb76ad4980b"
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "66666ad23a9f7dcd30483cb0",
+    "status": "DONE",
+    "createdAt": "2024-06-10T02:54:10.021000",
+    "updatedAt": "2024-06-19T08:52:23.313000",
+    "createdByID": "6621218d37bc638ade30832f",
+    "type": "BM",
+    "appointmentTime": "2024-06-10T03:30:00",
+    "no": "BM2024061000001",
+    "priority": "LOW",
+    "jobLocationID": "665e89d331f53304574aa1d3",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "6634705916782c28a9625b6f"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "ไม่พบ",
+      "lastName": "",
+      "phone": "022467800",
+      "email": ""
+    },
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.5437015866313,
+          13.76122846158479
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.5432847,
+          13.76209793
+        ]
+      },
+      "length": 0.297
+    },
+    "startWorkingTime": "2024-06-10T04:26:40.920000",
+    "customerSignature": "data:image/png;base64,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",
+    "customerSignatureValidate": "คุณคำรณ",
+    "endWorkingTime": "2024-06-19T08:52:23.344000",
+    "joblocation": {
+      "_id": "665e89d331f53304574aa1d3",
+      "createdAt": "2024-06-04T03:28:19.858000",
+      "updatedAt": "2024-06-04T03:28:19.858000",
+      "name": "บริษัท เซ็นจูรี่ โฮเต็ล จำกัด โรงแรมเซ็นจูรีปาร์ค",
+      "status": "ACTIVE",
+      "customerID": "6655b2ff5cece8c6d432ff00",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "9 ถนนราชปรารภ",
+      "subDistrict": "มักกะสัน",
+      "district": "ราชเทวี",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10400",
+      "contactFirstName": "ไม่พบ",
+      "contactLastName": "",
+      "contactPhone": "022467800",
+      "contactEmail": "",
+      "contactNote": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.5432847,
+          13.76209793
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "6655b2ff5cece8c6d432ff00",
+        "createdAt": "2024-05-28T10:33:35.528000",
+        "updatedAt": "2024-10-11T09:09:17.492000",
+        "status": "ACTIVE",
+        "code": "S130101",
+        "customerType": "INTERNAL",
+        "phone": "22901234",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "6655b2ff5cece8c6d432feff",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "668d18048a8922448e7d5a9d"
+        ],
+        "billingLocationRefID": "6655b2ff5cece8c6d432feff"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "6634705916782c28a9625b6f",
+        "createdAt": "2024-05-03T05:04:25.693000",
+        "updatedAt": "2025-04-05T06:23:05.692000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "เจษฎา",
+        "lastName": "จันทร์ทอง",
+        "imageID": "664f2f581ee79318a621d65f",
+        "code": "100399",
+        "idCard": "1279800142793",
+        "position": "TECHNICIAN",
+        "birthDate": "2001-12-23T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663462e516782c28a962577c",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "6634705916782c28a9625b6e",
+        "technicianWorkConditionID": "6634705916782c28a9625b6d",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "12/24/2001",
+          "subDistrict": "บ้านใหม่หนองไทร",
+          "district": "อรัญประเทศ",
+          "province": "สระแก้ว",
+          "postalCode": "27120"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.4960733333333,
+            13.75907666666667
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS13d9e82717b3ffc86cd30cb76ad4980b"
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "66666cd13a9f7dcd30483cd4",
+    "status": "DONE",
+    "createdAt": "2024-06-10T03:02:41.664000",
+    "updatedAt": "2024-06-19T08:52:40.984000",
+    "createdByID": "6621218d37bc638ade30832f",
+    "type": "BM",
+    "appointmentTime": "2024-06-10T03:30:00",
+    "no": "BM2024061000002",
+    "priority": "LOW",
+    "jobLocationID": "6655b7928f1af1a27f03bf58",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "66346a0816782c28a96259aa"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "หนิง",
+      "lastName": "",
+      "phone": "0981647809",
+      "email": ""
+    },
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.57479244,
+          13.7925074
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.617064,
+          13.9681413
+        ]
+      },
+      "length": 23.779
+    },
+    "startWorkingTime": "2024-06-10T03:06:21.785000",
+    "customerSignature": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9gAAAIjCAYAAAD4CLMfAAAAAXNSR0IArs4c6QAAIABJREFUeF7t3c2R3EaaMOCSB9RxT2pG7H0lCyhZIBO6ZcGSFkhtAbkWbLcFawKnLRDnvhGkbnsbesDvS0qQiqWqykwgAeTP0xETmhkBicznfQHki0RVffXp06dPB38ECBAgQIAAAQIECBAgQIDAIoGvFNiL/OxMgAABAgQIECBAgAABAgQ+CyiwJQIBAgQIECBAgAABAgQIECggoMAugKgJAgQIECBAgAABAgQIECCgwJYDBAgQIECAAAECBAgQIECggIACuwCiJggQIECAAAECBAgQIECAgAJbDhAgQIAAAQIECBAgQIAAgQICCuwCiJogQIAAAQIECBAgQIAAAQIKbDlAgAABAgQIECBAgAABAgQKCCiwCyBqggABAgQIECBAgAABAgQIKLDlAAECBAgQIECAAAECBAgQKCCgwC6AqAkCBAgQIECAAAECBAgQIKDAlgMECBAgQIAAAQIECBAgQKCAgAK7AKImCBAgQIAAAQIECBAgQICAAlsOECBAgAABAgQIECBAgACBAgIK7AKImiBAgAABAgQIECBAgAABAgpsOUCAAAECBAgQIECAAAECBAoIKLALIGqCAAECBAgQIECAAAECBAgosOUAAQIECBAgQIAAAQIECBAoIKDALoCoCQIECBAgQIAAAQIECBAgoMCWAwQIECBAgAABAgQIECBAoICAArsAoiYIECBAgAABAgQIECBAgIACWw4QIECAAAECBAgQIECAAIECAgrsAoiaIECAAAECBAgQIECAAAECCmw5QIAAAQIECBAgQIAAAQIECggosAsgaoIAAQIECBAgQIAAAQIECCiw5QABAgQIECBAgAABAgQIECggoMAugKgJAgQIECBAgAABAgQIECCgwJYDBAgQIECAAAECBAgQIECggIACuwCiJggQIECAAAECBAgQIECAgAJbDhAgQIAAAQIECBAgQIAAgQICCuwCiJogQIAAAQIECBAgQIAAAQIKbDlAgAABAgQIECBAgAABAgQKCCiwCyBqggABAgQIECBAgAABAgQIKLDlAAECBAgQIECAAAECBAgQKCCgwC6AqAkCBAgQIECAAAECBAgQIKDAlgMECBAgQIAAAQIECBAgQKCAgAK7AKImCBAgQIAAAQIECBAgQICAAlsOECBAgAABAgQIECBAgACBAgIK7AKImiBAgAABAgQIECBAgAABAgpsOUCAAAECBAgQIECAAAECBAoIKLALIGqCAAECBAgQIECAAAECBAgosOUAAQIECBAgQIAAAQIECBAoIKDALoCoCQIECBAgQIAAAQIECBAgoMCWAwQIECBAgAABAgQIECBAoICAArsAoiYIECBAgAABAgQIECBAgIACWw4QIECAAAECBAgQIECAAIECAgrsAoiaIECAAAECBAgQIECAAAECCmw5QIAAAQIECBAgQIAAAQIECggosAsgaoIAAQIECBAgQIAAAQIECCiw5QABAgQIECBAgAABAgQIECggoMAugKgJAgQIECBAgAABAgQIECCgwJYDBAgQIECAAAECBAgQIECggIACuwCiJggQIECAAAECBAgQIECAgAJbDhAgQIAAAQIECBAgQIAAgQICCuwCiJogQIAAAQIECBAgQIAAAQIKbDlAgAABAgQIECBAgAABAgQKCCiwCyBqggABAgQIECBAgAABAgQIKLDlAAECBAgQIECAAAECBAgQKCCgwC6AqAkCBAgQIECAAAECBAgQIKDAlgMECBAgQIAAAQIECBAgQKCAgAK7AKImCBAgQIAAAQIECBAgQICAAlsOECBAgAABAgQIECBAgACBAgIK7AKImiBAgAABAgQIECBAgAABAgpsOUCAAAECBAgQIECAAAECBAoIKLALIGqCAAECBAgQIECAAAECBAgosOUAAQIECBAgQIAAAQIECBAoIKDALoCoCQIECBAgQIAAAQIECBAgoMCWAwQIECBAgAABAgQIECBAoICAArsAoiYIECBAgAABAgQIECBAgIACWw4QIECAAAECBAgQIECAAIECAgrsAoiaIECAAAECBAgQIECAAAECCmw5QIAAAQIECBAgQIAAAQIECggosAsgaoIAAQIECBAgQIAAAQIECCiw5QABAgQIECBAgAABAgQIECggoMAugKgJAgQIECBAgAABAgQIECCgwJYDBAgQIECAAAECBAgQIECggIACuwCiJggQIECAAAECBAgQIECAgAJbDhAgQIAAAQIECBAgQIAAgQICCuwCiJogQIAAAQIECBAgQIAAAQIKbDlAgAABAgQIECBAgAABAgQKCCiwCyBqggABAgQIECBAgAABAgQIKLDlAAECBAgQIECAAAECBAgQKCCgwC6AqAkCBAgQIECAAAECBAgQIKDAlgMECBAgQIAAAQIECBAgQKCAgAK7AKImCBAgQIAAAQIECBAgQICAAlsOECBAgAABAgQIECBAgACBAgIK7AKImiBAgAABAgQIECBAgAABAgpsOUCAAAECBAgQIECAAAECBAoIKLALIGqCAAECBAgQIECAAAECBAgosOUAAQIECBAgQIAAAQIECBAoIKDALoCoCQIECBAgQIAAAQIECBAgoMCWAwQIECBAgAABAgQIECBAoICAArsAoiYIECBAgAABAgQIECBAgIACWw4QIECAAAECBAgQIECAAIECAgrsAoiaIECAAAECBAgQIECAAAECCmw5QIAAAQIECBAgQIAAAQIECggosAsgaoIAAQIECBAgQIAAAQIECCiw5QABAgQIECBAgAABAgQIECggoMAugKgJAgQIECBAgAABAgQIECCgwJYDBAgQIECAAAECBAgQIECggIACuwCiJggQIECAAAECBAgQIECAgAJbDhAgQIAAAQIECBAgQIAAgQICCuwCiJogQIAAAQIECBAgQIAAAQIKbDlAgAABAgQIECBAgAABAgQKCCiwCyBqggABAgQIECBAgAABAgQIKLDlAAECBAgQIECAAAECBAgQKCCgwC6AqAkCBAgQIECAAAECBAgQIKDAlgMECBAgQIAAAQIECBAgQKCAgAK7AKImCBAgQIAAAQIECBAgQICAAlsOECBAgAABAgQIECBAgACBAgIK7AKImiBAgAABAgQIECBAgAABAgpsOUCAAAECBAgQIECAAAECBAoIKLALIGqCAAECBAgQIECAAAECBAgosOUAAQIECBAgQIAAAQIECBAoIKDALoCoCQIECBAgQIAAAQIECBAgoMCWAwQIECBAgAABAgQIECBAoICAArsAoiYIECBAgAABAgQIECBAgIACWw4QIECAAAECBAgQIECAAIECAgrsAoiaIECAAAECBAgQIECAAAECCmw5QIAAAQIECBAgQIAAAQIECggosAsgaoIAAQIECBAgQKAOgX/84x+H77///s/OHP/v0383t8dTO+GfKX+nfQj7HPfxuI1L/3/KcWxDgMD+Agrs/WOgBwQIECBAgAABAn8IHBet039/enr6m09qcbsU9tmzZ4ePHz9+Loi3Oua5gvvFixef/++pAFeIL42s/QmsI6DAXsdVqwQIECBAgAABAmcEpiL1tHjeo3jtIUCh0J6K76kAV3z3EFljaFVAgd1q5PSbAAECBAgQIFCpwHERfbz6rIjeNmDHxXf47wrvbf0dbUwBBfaYcTdqAgQIECBAgMBigVAwh/8oohdTbtbAVGQfv3Ku8N6M34EGEFBgDxBkQyRAgAABAgQITALnVpFP/79QMIcC7Pif4XPI4T83Nze7fBZZBNcXCJ83D/H98ccfP692K7zXN3eE/gQU2P3F1IgIECBAgACBwQXOvaLt9ex1kmL68rOlxWit8Tl+zfyXX35ZB1GrBDoSUGB3FExDIUCAAAECBMYUCMXZ/f3958HXWqiVjsy5gvb4y75Ojzdtn/tTXaUK6DnjP/1CuNBGeKtg7xhPRbdV7jlRtU/vAgrs3iNsfAQIECBAgEB3Aj0X1Oc+IzwFcOkqcW+JMH0GfhrXXsW3Ve7eMst4lggosJfo2ZcAAQIECBAgsJFAL0X1pQJa8Vw2kfYuvn/++efPA7LKXTauWqtfQIFdf4z0kAABAgQIEBhU4Phbuvd+LTgnBIroHK3ttz33W+QfPnw4hP+s9ee18rVktVubgAK7tojoDwECBAgQIDC8wLRaXXNRfVxEH68+W4luO32PV76nz/WvMaJphdsXp62hq809BRTYe+o7NgECBAgQIEDgD4Eai2pFtPQMAlMRvNZnvBXb8qwnAQV2T9E0FgIECBAgQKA5gVC8rFW4pGCcK6KtQqfIjbvN8apz6VXuUGz73Pa4udXDyBXYPUTRGAgQIECAAIGmBPZarT7+HGwAU0g3lTbVdnaN18qnXPUKebVh17ELAgpsqUGAAAECBAgQ2EBgj28BD0XK8bc5bzBMhyDwWaDka+VWtSVVSwIK7Jaipa8ECBAgQIBAUwLTyl7p12ivIUxFtdXpplKl+85OBfeSc8Gqdvdp0sUAFdhdhNEgCBAgQIAAgdoEfvjhh8NW3wKuqK4t+vpzTaBEsR1Wtb0+Ls9qFFBg1xgVfSJAgAABAgSaFQhF9U8//bTqbwoHHEV1symi40cCS4tthbZ0qk1AgV1bRPSHAAECBAgQaFYgFAtLXoGNDdxnqmNC/n3LAkvOH4V2y5Hvq+8K7L7iaTQECBAgQIDADgJh1Tq8Er7Wn9XqtWS1W6PAklXt29vbw93dnW/IrzGwg/RJgT1IoA2TAAECBAgQWEdgrc9aK6rXiZdW2xKYu6o9fXu+z2m3Fe8eeqvA7iGKxkCAAAECBAhsLjB34h/rqMI6JuTfjygQzrenp6dZXxzo9fERM2a/MSuw97N3ZAIECBAgQKBBgen3rEt+Q7iiusFE0OVdBJa8Pu73tHcJ2XAHVWAPF3IDJkCAAAECBOYKlFy1VlTPjYL9CBw+r2RPD7tyPbw+nitm+xwBBXaOlm0JECBAgACBIQVKrVr7FvAh08egVxZY8uDL6+MrB2fA5hXYAwbdkAkQIECAAIF0gSWT9+OjmMinm9uSwByBJeeq18fniNvnnIACW14QIECAAAECBC4IlPiGcK+CSy8C2wos/UK00FvfPr5tzHo6mgK7p2gaCwECBAgQIFBMYMlqWOiEwrpYKDREYJbAki9ECwf01sks9uF3UmAPnwIACBAgQIAAgVOBpcW1ibmcIlCXwJJz2vlcVyxr740Cu/YI6R8BAgQIECCwqUD4QrPwavicP6vWc9TsQ2A7AYX2dtajHkmBPWrkjZsAAQIECBA4KzD3c9dv3779/Fq4PwIE6hdY+jltn9GuP8Z79VCBvZe84xIgQIAAAQLVCcxZ3fL6aHVh1CECyQJzf087PEx78eKFL0NLlh5nQwX2OLE2UgIECBAgQCAi8NVXXyUbeR08mcqGBJoQ8ICtiTBV30kFdvUh0kECBAgQIEBgC4GcybVV6y0i4hgE9hHIuRZMPXRN2CdWNR5VgV1jVPSJAAECBAgQ2FwgdfXaRHrz0DgggV0EFNq7sDd/UAV28yE0AAIECBAgQGCpQM5E+tOnT0sPZ38CBBoSyLk+hGF5CNdQcFfoqgJ7BVRNEiBAgAABAm0JWL1uK156S2APAYX2HurtHVOB3V7M9JgAAQIECBAoKJAzabZ6XRBeUwQaFMj91vGwmh2+ENFP+DUY7JldVmDPhLMbAQIECBAg0IeA1es+4mgUBLYUyHkwF/rltfEto7PvsRTY+/o7OgECBAgQILCjQM4k2er1joFyaAKVCuRcQxTalQaxcLcU2IVBNUeAAAECBAi0I5C6eh1G9PbtW695thNaPSWwmYAiezPqJg6kwG4iTDpJgAABAgQIrCGQU2BPq09PT0+HFy9efO7O6X8P/98333xzuLm5+bMY99nLNSKnTQL1CeQU2uG6EB7a+etPQIHdX0yNiAABAgQIEEgUyC2wE5s9u1mYUE+F+VR0K76XiNqXQJ0CqYW2t2LqjN/SXimwlwranwABAgQIEGhW4IcffjiEbwWu4W8qtkMRHlbGw9/036d/fvz48RD+c3t7m9zlWBEf+/fJB7IhAQJ/CqQU2QrsPhNGgd1nXI2KAAECBAgQSBTYchU7sUvVbHat+D4t/qfV+Q8fPhx+++23vz0cuDao44cK04OF0+2P++KhQDUpoiMRgWuFti9O7DN9FNh9xtWoCBAgQIAAgQyBlNWmjOZsuqHAabE9FfpTF04L8/DGggJ9wwA51OHc9cXPdvWbGArsfmNrZAQIECBAgECmwN3d3eHx8TFzL5v3IhAK79MC/LRgD2P1GfpeIr7tOEKhLXe2Nd/jaArsPdQdkwABAgQIEKhWIBRY4bPZ/gjkCJx+iZ1V8hw92xLoR0CB3U8sjYQAAQIECBAoKOC18YKYgzal6B408IY9tIACe+jwGzwBAgQIECAQEwgr2qffNH76+9fh85TTNuGf4YvTTr+4Kxynlm8sj43Zv19PIORK+AvFt1Xu9Zy1TGAvAQX2XvKOS4AAAQIECAwvsKTgnj4rfPzPU9DTBwGn/37J8YcPXiGAaZVbwV0IVDMEdhZQYO8cAIcnQIAAAQIECNQoMBXf0xd/nevjuSL/+IvCTv99aOPaA4HjY0y/BT79f6M8DDh+rTx8TMEfAQJtCSiw24qX3hIgQIAAAQIEhhY4LrTPFd09FuZT0a3gHjr1Db4RAQV2I4HSTQIECBAgQIAAgeUCl16tP/c5+1pXz6fPcSu4l+eDFgiUFlBglxbVHgECBAgQIECAQLcCx19mFwYZVsz3fH1dsd1tqhlYowIK7EYDp9sECBAgQIAAAQJ1CRx/4/z9/f0unVNw78LuoAT+FFBgSwYCBAgQIECAAAECKwlMr3HvsdLtG8pXCqpmCVwRUGBLDwIECBAgQIAAAQIbCexZcFvd3ijIDjO0gAJ76PAbPAECBAgQIECAwJ4C02vlW69wh2Lbb2/vGXnH7lVAgd1rZI2LAAECBAgQIECgOYHjz3FvUXT7CbDmUkSHKxdQYFceIN0jQIAAAQIECBAYW+Du7u7w+Pi4OkJY1fbTX6szO0DnAgrszgNseAQIECBAgAABAn0IhOJ3i28nV2j3kS9GsY+AAnsfd0clQIAAAQIECBAgMEsgFNpbvD6u0J4VHjsNLqDAHjwBDJ8AAQIECBAgQKBNgel17rVXtRXabeaHXu8joMDex91RCRAgQIAAAQIECBQTWPv1cV+GVixUGupcQIHdeYANjwABAgQIECBAYByBtV8f9/Ne4+SSkc4TUGDPc7MXAQIECBAgQIAAgWoFpp/7Wuv1ca+NVxt6HdtZQIG9cwAcngABAgQIECBAgMCaAmu+Pq7QXjNy2m5RQIHdYtT0mQABAgQIECBAgECmwFpfinZzc3P47//+70P4nLY/AqMLKLBHzwDjJ0CAAAECBAgQGEpgrdfHQ4E9fUZ7KFCDJXAkoMCWDgQIECBAgAABAgQGFVjj9XGF9qDJZNifBRTYEoEAAQIECBAgQIDAwAJrrmi/fft2YFlDH1FAgT1i1I2ZAAECBAgQIECAwInAWj/xFYpsn8+WbqMIKLBHibRxEiBAgAABAgQIEEgQWOO1cd82ngBvky4EFNhdhNEgCBAgQIAAAQIECJQVKF1oK7LLxkdrdQoosOuMi14RIECAAAECBAgQqEKgZKEdXhX3uewqwqoTKwkosFeC1SwBAgQIECBAgACBXgRCkf34+Hj48OHD4iF9++23h9evX/tc9mJJDdQooMCuMSr6RIAAAQIECBAgQKBCgbAC/fT0VKRnvvysCKNGKhNQYFcWEN0hQIAAAQIECBAgULNA+Fmv+/v7Q/jn0r9Pnz4tbcL+BKoSUGBXFQ6dIUCAAAECBAgQINCGQInPZvtMdhux1st0AQV2upUtCRAgQIAAAQIECBA4Eiixmq3IllI9CSiwe4qmsRAgQIAAAQIECBDYQWDparYie4egOeQqAgrsVVg1SoAAAQIECBAgQGAsAUX2WPE22vMCCmyZQYAAAQIECBAgQIBAEYGlr4xbyS4SBo3sKKDA3hHfoQkQIECAAAECBAj0KPDDDz/M/pZxRXaPGTHOmBTY48TaSAkQIECAAAECBAhsJrD0N7P9TvZmoXKgggIK7IKYmiJAgAABAgQIECBA4C+B8Mr4q1evDu/evZvFosiexWanHQUU2DviOzQBAgQIECBAgACBEQSWfDb7559/PoQvUPNHoAUBBXYLUdJHAgQIECBAgAABAh0IzP2mcUV2B8EfZAgK7EECbZgECBAgQIAAAQIEahCYu5qtyK4hevoQE1Bgx4T8ewIECBAgQIAAAQIEiguEQjt823jO37fffnv49ddfc3axLYFNBRTYm3I7GAECBAgQIECAAAECxwJzftLr9evXh5cvX4IkUJ2AAru6kOgQAQIECBAgQIAAgbEE5nw2+9OnT2MhGW0TAgrsJsKkkwQIECBAgAABAgT6Fsj9bPaLFy8OYR9/BGoSUGDXFA19IUCAAAECBAgQIDCwQE6RfXNzc3j//v3AWoZeo4ACu8ao6BMBAgQIECBAgACBgQVSPpetwB44QSoeugK74uDoGgECBAgQIECAAIFRBe7u7g6Pj48Xh397e3t4eHgYlce4KxVQYFcaGN0iQIAAAQIECBAgMLrA999/f3h6evobg89fj54Z9Y5fgV1vbPSMAAECBAgQIECAwPACb968OfzXf/3X4ePHj4dnz54dQnFt5Xr4tKgWQIFdbWh0jAABAgQIECBAgAABAgRaElBgtxQtfSVAgAABAgQIECBAgACBagUU2NWGRscIECBAgAABAgQIECBAoCUBBXZL0dJXAgQIECBAgAABAgQIEKhWQIFdbWh0jAABAgQIECBAgAABAgRaElBgtxQtfSVAgAABAgQIECBAgACBagUU2NWGRscIECBAgAABAgQIECBAoCUBBXZL0dJXAgQIECBAgAABAgQIEKhWQIFdbWh0jAABAgQIECBAgAABAgRaElBgtxQtfSVAgAABAgQIECBAgACBagUU2NWGRscIECBAgAABAgQIECBAoCUBBXZL0dJXAgQIECBAgAABAgQIEKhWQIFdbWh0jAABAgQIECBAgAABAgRaElBgtxQtfSVAgACBrgX+8Y9//Dm+4//+9PR0cdwvXrz427/7/vvvP/9/0z+7RjM4AgQIECBQkYACu6Jg6AoBAgQI9CtwWjwfF83H/25NgZubm8/N397e/nkYxfia4tomQIAAgdEEFNijRdx4CRAgQKCYwLkV59PV5q2K52KD+mPl+3hlXBFeUldbBAgQINCzgAK75+gaGwECBAgUEwiFcvjPVEC3WDiXwggF91SAh//uVfRSstohQIAAgdYFFNitR1D/CRAgQGAVgVBA39/ff2575GI6Ffe46P7ll19Sd7MdAQIECBDoSkCB3VU4DYYAAQIElggoqpfo/X3fn3/++fP/qeAu66o1AgQIEKhXQIFdb2z0jAABAgQ2EJiKaqvU62Jb4V7XV+sECBAgUIeAAruOOOgFAQIECGwocPx5aoX1hvBHh/I5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NsfFssJ5hMwwRgIECBAgQIAAgdIC3RbYPn9dOlW0R4AAAQIECBAgQIAAAQLXBLossP08l6QnQIAAAQIECBAgQIAAga0FuiywvR6+dRo5HgECBAgQIECAAAECBAh0WWB7PVxiEyBAgAABAgQIECBAgMDWAt0V2H6ea+sUcjwCBAgQIECAAAECBAgQCALdFdheD5fYBAgQIECAAAECBAgQILCHwBAF9qdPn/awdUwCBAgQIECAAAECBAgQGEigqwLb6+EDZa6hEiBAgAABAgQIECBAoDKB7gvst2/fHr7//vvK2HWHAAECBAgQIECAAAECBHoT6KrA9vnr3tLTeAgQIECAAAECBAgQINCOQFcFtp/naifx9JQAAQIECBAgQIAAAQK9CXRTYPv8dW+paTwECBAgQIAAAQIECBBoS6CbAtvr4W0lnt4SIECAAAECBAgQIECgN4FuCuzT18NDoPw8V2/pVIZQ2QAABT9JREFUajwECBAgQIAAAQIECBCoV6CLAtvr4fUmmJ4RIECAAAECBAgQIEBgFIEuCmyvh4+SrsZJgAABAgQIECBAgACBegUU2PXGRs8IECBAgAABAgQIECBAoCGB5gtsr4c3lG26SoAAAQIECBAgQIAAgY4Fuiywf/7558Mvv/zScdgMjQABAgQIECBAgAABAgRqE2i+wPb569pSSn8IECBAgAABAgQIECAwpkDzBfbpz3N9//33h7dv344ZTaMmQIAAAQIECBAgQIAAgd0Emi6wff56t7xxYAIECBAgQIAAAQIECBA4EWi6wPZ6uHwmQIAAAQIECBAgQIAAgVoEuiuwP336VIutfhAgQIAAAQIECBAgQIDAQALNFtheDx8oSw2VAAECBAgQIECAAAECDQg0W2CHn+G6v7//gjh8uVn4kjN/BAgQIECAAAECBAgQIEBga4FmC2yfv946VRyPAAECBAgQIECAAAECBK4JNFtg+3kuiU2AAAECBAgQIECAAAECNQk0WWD7/HVNKaQvBAgQIECAAAECBAgQIBAEmiywvR4ueQkQIECAAAECBAgQIECgNoEmC+zT18MDqp/nqi219IcAAQIECBAgQIAAAQJjCTRXYHs9fKwENVoCBAgQIECAAAECBAi0ItBcge318FZSSz8JECBAgAABAgQIECAwlkAXBbbXw8dKWqMlQIAAAQIECBAgQIBAjQJNFdheD68xhfSJAAECBAgQIECAAAECBIJA8wX2zz//fPjll19EkwABAgQIECBAgAABAgQI7CrQVIHt89e75oqDEyBAgAABAgQIECBAgMAVgaYKbD/PJZcJECBAgAABAgQIECBAoFaBZgpsn7+uNYX0iwABAgQIECBAgAABAgSCQDMFdvic9f39/RdRe/v27eH7778XSQIECBAgQIAAAQIECBAgsLtAMwX2uc9f+3mu3fNHBwgQIECAAAECBAgQIEDgD4FmCuzTz1+Hleuwgu2PAAECBAgQIECAAAECBAjUINBEgX3u89d+nquG9NEHAgQIECBAgAABAgQIEJgEmiiw/TyXhCVAgAABAgQIECBAgACB2gWaKLD9PFftaaR/BAgQIECAAAECBAgQIFB9ge3nuSQpAQIECBAgQIAAAQIECLQg0GSB7ee5WkgtfSRAgAABAgQIECBAgMBYAtUX2D5/PVZCGi0BAgQIECBAgAABAgRaFai+wPbzXK2mln4TIECAAAECBAgQIEBgLIGqC2yfvx4rGY2WAAECBAgQIECAAAECLQtUXWD/8ssvh/v7+y98ff665XTTdwIECBAgQIAAAQIECPQrUHWBfe7z158+feo3GkZGgAABAgQIECBAgAABAs0KVF1g+/x1s3ml4wQIECBAgAABAgQIEBhOoNoC+9znr3/++edDeG3cHwECBAgQIECAAAECBAgQqE2gqQLb569rSx/9IUCAAAECBAgQIECAAIFJoNoC2+evJSkBAgQIECBAgAABAgQItCRQbYHt89ctpZG+EiBAgAABAgQIECBAgECVBfa5z197PVyyEiBAgAABAgQIECBAgEDNAgrsmqOjbwQIECBAgAABAgQIECDQjECVBbbPXzeTPzpKgAABAgQIECBAgAABAn8IVFlg+/y1/CRAgAABAgQIECBAgACB1gSqK7B9/rq1FNJfAgQIECBAgAABAgQIEAgCCmx5QIAAAQIECBAgQIAAAQIECghUV2D7/HWBqGqCAAECBAgQIECAAAECBDYXqK7A9vnrzXPAAQkQIECAAAECBAgQIECggMD/A4e9Hxhf3ueTAAAAAElFTkSuQmCC",
+    "customerSignatureValidate": "ร้านสะดวกซัก Sprinter เมืองเอก",
+    "endWorkingTime": "2024-06-19T08:52:41.014000",
+    "joblocation": {
+      "_id": "6655b7928f1af1a27f03bf58",
+      "createdAt": "2024-05-28T10:53:06.721000",
+      "updatedAt": "2024-05-28T10:53:06.721000",
+      "name": "นางสาวกรภัทร จูพัฒนกุล-ร้าน Sprinter",
+      "status": "ACTIVE",
+      "customerID": "6655b2ff5cece8c6d432ff00",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "267  ซ.พหลโยธิน85",
+      "subDistrict": "คูคต",
+      "district": "ลำลูกกา",
+      "province": "ปทุมธานี",
+      "postalCode": "12130",
+      "contactFirstName": "หนิง",
+      "contactLastName": "",
+      "contactPhone": "0981647809",
+      "contactEmail": "",
+      "contactNote": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.617064,
+          13.9681413
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "6655b2ff5cece8c6d432ff00",
+        "createdAt": "2024-05-28T10:33:35.528000",
+        "updatedAt": "2024-10-11T09:09:17.492000",
+        "status": "ACTIVE",
+        "code": "S130101",
+        "customerType": "INTERNAL",
+        "phone": "22901234",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "6655b2ff5cece8c6d432feff",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "668d18048a8922448e7d5a9d"
+        ],
+        "billingLocationRefID": "6655b2ff5cece8c6d432feff"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "66346a0816782c28a96259aa",
+        "createdAt": "2024-05-03T04:37:28.321000",
+        "updatedAt": "2025-04-04T06:32:44.244000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "กฤษฎา",
+        "lastName": "ประสิทธิผล",
+        "imageID": "664f2fb11ee79318a621d811",
+        "code": "100052",
+        "idCard": "1269900095291",
+        "position": "TECHNICIAN",
+        "birthDate": "1989-07-18T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "technicianLeadID": "663460a016782c28a9625718",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "66346a0816782c28a96259a9",
+        "technicianWorkConditionID": "66346a0816782c28a96259a8",
+        "totalScore": 20,
+        "totalJobReviewed": 1,
+        "address": {
+          "address": "7/19/1989",
+          "subDistrict": "พรหมณี",
+          "district": "เมืองนครนายก",
+          "province": "นครนายก",
+          "postalCode": "26000"
+        },
+        "score": {
+          "time": 4,
+          "manner": 4,
+          "knowledge": 4,
+          "overall": 4,
+          "recommend": 4
+        },
+        "avgScore": {
+          "time": 4.0,
+          "manner": 4.0,
+          "knowledge": 4.0,
+          "overall": 4.0,
+          "recommend": 4.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            102.28883481,
+            12.06174375
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS2bfb87800cc281fc44cd4b0873ab8f26",
+        "customerReviewIDs": [
+          "66e8ee937d1b6664b79363dc"
+        ]
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "666a5601afea69a5812ba589",
+    "status": "WAITINGJOB",
+    "createdAt": "2024-06-13T02:14:25.169000",
+    "updatedAt": "2024-06-13T02:14:25.169000",
+    "createdByID": "6621218d37bc638ade30832f",
+    "type": "BM",
+    "appointmentTime": "2024-06-13T03:00:00",
+    "no": "BM2024061300001",
+    "priority": "LOW",
+    "jobLocationID": "66609142dbac039f08654e5b",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "6634685a16782c28a962588c"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "นิต",
+      "lastName": "",
+      "phone": "0819724086",
+      "email": ""
+    },
+    "joblocation": {
+      "_id": "66609142dbac039f08654e5b",
+      "createdAt": "2024-06-05T16:24:34.433000",
+      "updatedAt": "2024-09-25T02:06:42.654000",
+      "name": "ไพน์เฮิร์สท กอล์ฟ คลับ แอนด์ โฮเทล",
+      "status": "ACTIVE",
+      "customerID": "663b1cff9f98a86c6db25650",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "146/4 หมู่ที่ 17 ถ. พหลโยธิน",
+      "subDistrict": "คลองหนึ่ง",
+      "district": "คลองหลวง",
+      "province": "ปทุมธานี",
+      "postalCode": "12120",
+      "contactFirstName": "นิต",
+      "contactPhone": "0819724086",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.6242,
+          14.0081
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "663b1cff9f98a86c6db25650",
+        "createdAt": "2024-05-08T06:34:39.954000",
+        "updatedAt": "2024-06-28T15:39:52.041000",
+        "status": "ACTIVE",
+        "code": "PD13101",
+        "customerType": "INDIVIDUAL",
+        "phone": "035274279",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "663b1cff9f98a86c6db2564f",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "6616300b899c6b28afd7fa45",
+          "6616300b899c6b28afd7fa46",
+          "6616300b899c6b28afd7fa47",
+          "6616300b899c6b28afd7fa48",
+          "6616300b899c6b28afd7fa49",
+          "6616300c899c6b28afd7fa56"
+        ],
+        "billingLocationRefID": "663b1cff9f98a86c6db2564f"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "6634685a16782c28a962588c",
+        "createdAt": "2024-05-03T04:30:18.287000",
+        "updatedAt": "2025-04-05T02:20:56.418000",
+        "status": "ACTIVE",
+        "type": "EXTERNAL",
+        "firstName": "อธิพงศ์",
+        "lastName": "แก้วจำปา",
+        "imageID": "664f2fc41ee79318a621d92b",
+        "code": "100038",
+        "idCard": "1420400080456",
+        "position": "TECHNICIAN",
+        "birthDate": "1993-11-01T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": false,
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "6634685a16782c28a962588b",
+        "technicianWorkConditionID": "6634685a16782c28a962588a",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "33/2",
+          "subDistrict": "หาดคัมภีร์",
+          "district": "ปากชม",
+          "province": "เลย",
+          "postalCode": "42150"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "technicianLeadID": "664ff6354c8d92f0cf7a5d22",
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            104.7650176474974,
+            17.42715973035347
+          ]
+        },
+        "bindingType": "apn",
+        "twilioSID": "BSfa17bef2e18aa77b7917c308091ca8a2",
+        "technicianCompanyID": "67a03f47c66f9d37d7d97986"
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    }
+  },
+  {
+    "_id": "666a6a2d9b6b4677c66937ce",
+    "status": "WORKING",
+    "createdAt": "2024-06-13T03:40:29.146000",
+    "updatedAt": "2024-06-13T04:29:21.560000",
+    "createdByID": "6621218d37bc638ade30832f",
+    "type": "PM",
+    "appointmentTime": "2024-06-13T03:01:00",
+    "no": "PM2024061300002",
+    "priority": "LOW",
+    "jobLocationID": "665e89e531f53304574aa1e7",
+    "isManualFindTechnician": true,
+    "technicianProfileIDs": [
+      "6650016f4c8d92f0cf7a5d8e"
+    ],
+    "isSendRequest": false,
+    "isEditable": true,
+    "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+    "contractID": "666a6a079b6b4677c66937cd",
+    "isQcJob": false,
+    "oldJobRefIDs": [],
+    "pauseTime": 0,
+    "isReview": false,
+    "isSlaInRisk": false,
+    "isSlaInFail": false,
+    "numOfHourSla": 0,
+    "customerContact": {
+      "firstName": "จิ๊กซอว์",
+      "lastName": "",
+      "phone": "020199111",
+      "email": ""
+    },
+    "geoLocation": {
+      "startLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.64903,
+          13.68467666666667
+        ]
+      },
+      "endLocation": {
+        "type": "Point",
+        "coordinates": [
+          100.7240485,
+          13.72299942
+        ]
+      },
+      "length": 12.574
+    },
+    "startWorkingTime": "2024-06-13T04:07:25.191000",
+    "joblocation": {
+      "_id": "665e89e531f53304574aa1e7",
+      "createdAt": "2024-06-04T03:28:37.530000",
+      "updatedAt": "2024-10-07T07:10:39.879000",
+      "name": "บริษัท เมริท ไซน์ จำกัด-(เดอะพาร์ก ไนน์ ศรีนครินทร์)",
+      "status": "ACTIVE",
+      "customerID": "6655b2ff5cece8c6d432ff00",
+      "type": "CUSTOMER",
+      "isSameBillingLocation": false,
+      "address": "26 ถ. ศรีนครินทร์ แขวงหนองบอน",
+      "subDistrict": "หนองบอน",
+      "district": "เขตประเวศ",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10250",
+      "contactFirstName": "คุณปวีณา",
+      "contactLastName": "ฝ่ายขาย",
+      "contactPhone": "0989258095",
+      "contactEmail": "",
+      "contactNote": "",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          100.6503307768891,
+          13.69095967457631
+        ]
+      },
+      "createdByID": "64cc720d1bb4b13964124202",
+      "customer": {
+        "_id": "6655b2ff5cece8c6d432ff00",
+        "createdAt": "2024-05-28T10:33:35.528000",
+        "updatedAt": "2024-10-11T09:09:17.492000",
+        "status": "ACTIVE",
+        "code": "S130101",
+        "customerType": "INTERNAL",
+        "phone": "22901234",
+        "email": "",
+        "imageID": "64b4e5f44dd08d3e2adeeca1",
+        "billingLocationID": "6655b2ff5cece8c6d432feff",
+        "customerServiceTypeIDs": [
+          "6616300b899c6b28afd7fa44",
+          "668d18048a8922448e7d5a9d"
+        ],
+        "billingLocationRefID": "6655b2ff5cece8c6d432feff"
+      }
+    },
+    "technicianprofiles": [
+      {
+        "_id": "6650016f4c8d92f0cf7a5d8e",
+        "createdAt": "2024-05-24T02:54:39.221000",
+        "updatedAt": "2025-02-27T04:17:12.329000",
+        "status": "ACTIVE",
+        "type": "INTERNAL",
+        "firstName": "ณรงเกียรติ",
+        "lastName": "ปวงสุข",
+        "imageID": "665001014c8d92f0cf7a5d8b",
+        "code": "0000101",
+        "idCard": "1349300020108",
+        "position": "TECHNICIAN",
+        "birthDate": "2005-02-08T00:00:00",
+        "gender": "MALE",
+        "lineId": "",
+        "isLocationActive": true,
+        "currentArea": true,
+        "technicianLeadID": "663460a016782c28a9625718",
+        "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+        "contactPersonID": "6650016f4c8d92f0cf7a5d8d",
+        "technicianWorkConditionID": "6650016f4c8d92f0cf7a5d8c",
+        "totalScore": 0,
+        "totalJobReviewed": 0,
+        "address": {
+          "address": "174 หมู่ 4",
+          "subDistrict": "ศรีสุข",
+          "district": "เขื่องใน",
+          "province": "อุบลราชธานี",
+          "postalCode": "34150"
+        },
+        "score": {
+          "time": 0,
+          "manner": 0,
+          "knowledge": 0,
+          "overall": 0,
+          "recommend": 0
+        },
+        "avgScore": {
+          "time": 0.0,
+          "manner": 0.0,
+          "knowledge": 0.0,
+          "overall": 0.0,
+          "recommend": 0.0
+        },
+        "latestLocation": {
+          "type": "Point",
+          "coordinates": [
+            100.5423825,
+            13.7504596
+          ]
+        },
+        "bindingType": "fcm",
+        "twilioSID": "BS548c19c66f87a80f521bc857530e1ed8"
+      }
+    ],
+    "settingcompany": {
+      "_id": "64f9aa6d98184a965b93eb3a",
+      "createdAt": "2023-09-07T10:48:13.677000",
+      "updatedAt": "2024-07-10T07:57:51.271000",
+      "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+      "phone": "846650066",
+      "email": "tech_pdd@peerapat.com",
+      "type": "BUSINESS_UNIT",
+      "organizationType": "DEPARTMENT",
+      "logoID": "66592f6d3464749428a20734",
+      "coverID": "66178c1a0897d5928869cf13",
+      "billingLocationID": "64f9aa6d98184a965b93eb39",
+      "sla": [],
+      "billinglocation": {
+        "_id": "64f9aa6d98184a965b93eb39",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "companyType": "HEADOFFICE",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "taxID": "0107551000231",
+        "address": "406 ถนนรัชดาภิเษก",
+        "subDistrict": "สามเสนนอก",
+        "district": "ห้วยขวาง",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10310"
+      }
+    },
+    "contract": {
+      "_id": "666a6a079b6b4677c66937cd",
+      "createdAt": "2024-06-13T03:39:50.962000",
+      "updatedAt": "2024-10-28T03:58:18.430000",
+      "customerServiceTypeID": "6616300b899c6b28afd7fa44",
+      "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+      "contractNo": "C2024061300002",
+      "isEditable": true,
+      "status": "ACTIVE",
+      "jobLocationID": "665e89e531f53304574aa1e7",
+      "assetIDs": [
+        "666a69599b6b4677c669376d",
+        "666a699d9b6b4677c669379d"
+      ],
+      "duration": 60,
+      "durationUnit": "MONTH",
+      "startDate": "2024-06-12T17:00:00",
+      "endDate": "2029-06-13T16:59:59.999000",
+      "conditionType": "TIME",
+      "conditionByTime": {
+        "duplicate": 60
+      },
+      "planing": [
+        {
+          "workingTime": "2024-06-19T17:00:00",
+          "isManual": false,
+          "jobNo": "PM2024061900001",
+          "jobID": "66725267738031230ea70a7a",
+          "status": "WORKING"
+        },
+        {
+          "workingTime": "2024-07-19T17:00:00",
+          "isManual": false,
+          "jobNo": "PM2024070200011",
+          "jobID": "6683a5af746570819a3aeffd",
+          "status": "WORKING"
+        },
+        {
+          "workingTime": "2024-10-06T17:00:00",
+          "isManual": false,
+          "jobNo": "PM2024100700030",
+          "jobID": "6703f4035704586b1c5d3588",
+          "status": "WORKING"
+        },
+        {
+          "workingTime": "2024-10-27T17:00:00",
+          "isManual": false,
+          "jobNo": "PM2024102800013",
+          "jobID": "671f0ab05a6f49ccfe1b43e3",
+          "status": "CANCEL"
+        },
+        {
+          "workingTime": "2024-12-01T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2024-12-31T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-02-02T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2024-11-22T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2024-12-24T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-01-24T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-02-25T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-03-28T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-04-28T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-05-30T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-06-30T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-07-31T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-09-01T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-10-02T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-11-03T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2025-12-04T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-01-04T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-02-05T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-03-08T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-04-08T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-05-10T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-06-10T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-07-12T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-08-12T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-09-12T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-10-14T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-11-14T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2026-12-15T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-01-16T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-02-16T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-03-20T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-04-20T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-05-21T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-06-22T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-07-23T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-08-24T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-09-24T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-10-25T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-11-26T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2027-12-27T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-01-27T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-02-28T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-03-30T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-05-01T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-06-01T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-07-02T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-08-03T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-09-03T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-10-04T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-11-05T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2028-12-06T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2029-01-07T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2029-02-07T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2029-03-10T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2029-04-11T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        },
+        {
+          "workingTime": "2029-05-12T17:00:00",
+          "isManual": false,
+          "jobNo": null,
+          "jobID": null,
+          "status": "WAITING"
+        }
+      ],
+      "planningManual": [
+        {
+          "workingTime": "2024-06-13T03:01:00",
+          "isManual": true,
+          "jobNo": "PM2024061300002",
+          "jobID": "666a6a2d9b6b4677c66937ce",
+          "status": "WORKING"
+        }
+      ],
+      "fileIDs": [],
+      "customerservicetype": {
+        "_id": "6616300b899c6b28afd7fa44",
+        "createdAt": "2024-04-10T06:22:02.237000",
+        "updatedAt": "2024-04-10T06:22:02.237000",
+        "name": "บริการเครื่องป้อนซักรีด",
+        "customerIDs": [
+          "663afde29b4687ed30f31d82",
+          "663b08cc6d6842ac32cb39ae",
+          "663b0acf6d6842ac32cb39b0",
+          "663b1b449f98a86c6db25648",
+          "663b1cfe9f98a86c6db2564a",
+          "663b1cff9f98a86c6db2564c",
+          "663b1cff9f98a86c6db2564e",
+          "663b1cff9f98a86c6db25650",
+          "663b1d009f98a86c6db25652",
+          "663b1d009f98a86c6db25654",
+          "663b1d019f98a86c6db25656",
+          "663b1d019f98a86c6db25658",
+          "663b1d029f98a86c6db2565a",
+          "663b1d029f98a86c6db2565c",
+          "663b1d039f98a86c6db2565e",
+          "663b1d039f98a86c6db25660",
+          "663b1d049f98a86c6db25662",
+          "663b1d049f98a86c6db25664",
+          "663b1d059f98a86c6db25666",
+          "663b1d059f98a86c6db25668",
+          "663b1d069f98a86c6db2566a",
+          "663b1d069f98a86c6db2566c",
+          "663b1d079f98a86c6db2566e",
+          "663b1d079f98a86c6db25670",
+          "663b1d089f98a86c6db25672",
+          "663b1d089f98a86c6db25674",
+          "663b1d099f98a86c6db25676",
+          "664c7c9ee5355732f0f9b648",
+          "664c7e7be5355732f0f9b64a",
+          "664c7e7ce5355732f0f9b64c",
+          "664c7e7ce5355732f0f9b64e",
+          "664c7e7de5355732f0f9b650",
+          "664c7e7ee5355732f0f9b652",
+          "664c7e7fe5355732f0f9b654",
+          "664c7e7fe5355732f0f9b656",
+          "664c7e80e5355732f0f9b658",
+          "664c7e81e5355732f0f9b65a",
+          "664c7e82e5355732f0f9b65c",
+          "664c7e83e5355732f0f9b65e",
+          "664c7e83e5355732f0f9b660",
+          "664c7e84e5355732f0f9b662",
+          "664c7e85e5355732f0f9b664",
+          "664c7e88e5355732f0f9b666",
+          "664c7e89e5355732f0f9b668",
+          "664c7e8ae5355732f0f9b66a",
+          "664c7e8be5355732f0f9b66c",
+          "664c7e8ce5355732f0f9b66e",
+          "664c7e8ce5355732f0f9b670",
+          "664c7e8de5355732f0f9b672",
+          "664c7e8de5355732f0f9b674",
+          "664c7e8de5355732f0f9b676",
+          "664c7e8ee5355732f0f9b678",
+          "664c7e8fe5355732f0f9b67a",
+          "664c7e8fe5355732f0f9b67c",
+          "664c7e90e5355732f0f9b67e",
+          "664c7e90e5355732f0f9b680",
+          "664c7e91e5355732f0f9b682",
+          "664c7e91e5355732f0f9b684",
+          "664c7e92e5355732f0f9b686",
+          "664c7e92e5355732f0f9b688",
+          "664e031b9e3010825bde9552",
+          "664ee0c6d0f42a127ade5459",
+          "664ee159d0f42a127ade545b",
+          "664ee159d0f42a127ade545d",
+          "664ee15ad0f42a127ade545f",
+          "664ee15bd0f42a127ade5461",
+          "664ee15cd0f42a127ade5463",
+          "664ee15dd0f42a127ade5465",
+          "6655b00d4b457ad892d6e8fc",
+          "6655b00e4b457ad892d6e8fe",
+          "6655b018a3bd8f744857e383",
+          "6655b019a3bd8f744857e385",
+          "6655b019a3bd8f744857e387",
+          "6655b2ff5cece8c6d432ff00",
+          "6655b308d12bc55774a891d6",
+          "6655b309d12bc55774a891d8",
+          "66a85949b8a8f9f472d5a1b2",
+          "677c8d9de71d1dec67a53a55",
+          "6788659dd6d7a86612428cbd"
+        ]
+      },
+      "settingcompany": {
+        "_id": "64f9aa6d98184a965b93eb3a",
+        "createdAt": "2023-09-07T10:48:13.677000",
+        "updatedAt": "2024-07-10T07:57:51.271000",
+        "name": "บริษัท พีรพัฒน์ เทคโนโลยี จำกัด(มหาชน)-หน่วยงานทดสอบและพัฒนาสินค้า",
+        "phone": "846650066",
+        "email": "tech_pdd@peerapat.com",
+        "type": "BUSINESS_UNIT",
+        "organizationType": "DEPARTMENT",
+        "logoID": "66592f6d3464749428a20734",
+        "coverID": "66178c1a0897d5928869cf13",
+        "billingLocationID": "64f9aa6d98184a965b93eb39",
+        "sla": []
+      },
+      "joblocation": {
+        "_id": "665e89e531f53304574aa1e7",
+        "createdAt": "2024-06-04T03:28:37.530000",
+        "updatedAt": "2024-10-07T07:10:39.879000",
+        "name": "บริษัท เมริท ไซน์ จำกัด-(เดอะพาร์ก ไนน์ ศรีนครินทร์)",
+        "status": "ACTIVE",
+        "customerID": "6655b2ff5cece8c6d432ff00",
+        "type": "CUSTOMER",
+        "isSameBillingLocation": false,
+        "address": "26 ถ. ศรีนครินทร์ แขวงหนองบอน",
+        "subDistrict": "หนองบอน",
+        "district": "เขตประเวศ",
+        "province": "กรุงเทพมหานคร",
+        "postalCode": "10250",
+        "contactFirstName": "คุณปวีณา",
+        "contactLastName": "ฝ่ายขาย",
+        "contactPhone": "0989258095",
+        "contactEmail": "",
+        "contactNote": "",
+        "location": {
+          "type": "Point",
+          "coordinates": [
+            100.6503307768891,
+            13.69095967457631
+          ]
+        },
+        "createdByID": "64cc720d1bb4b13964124202"
+      },
+      "assets": [
+        {
+          "_id": "666a69599b6b4677c669376d",
+          "createdAt": "2024-06-13T03:36:57.016000",
+          "updatedAt": "2024-06-13T03:36:57.016000",
+          "status": "ACTIVE",
+          "serialNumber": "C1105261/LP",
+          "serialNumberSecondary": "",
+          "assetCode": "Series507",
+          "assetCodeSecondary": "",
+          "assetTypeID": "6625ca90c73a5d92213a9ce4",
+          "assetModelID": "663490ec033d10563fbaec40",
+          "assetAge": 5,
+          "producedYear": 0,
+          "startWarranty": "2011-07-12T17:00:00",
+          "warrantyPeriod": 5,
+          "endWarranty": "2016-07-12T17:00:00",
+          "isVerify": false,
+          "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+          "jobLocationID": "665e89e531f53304574aa1e7",
+          "warrantyType": "YEAR",
+          "createdByID": "64cc720d1bb4b13964124202"
+        },
+        {
+          "_id": "666a699d9b6b4677c669379d",
+          "createdAt": "2024-06-13T03:38:05.870000",
+          "updatedAt": "2024-06-13T03:38:05.870000",
+          "status": "ACTIVE",
+          "serialNumber": "C1105262/LP",
+          "serialNumberSecondary": "",
+          "assetCode": "Series508",
+          "assetCodeSecondary": "",
+          "assetTypeID": "6625ca90c73a5d92213a9ce4",
+          "assetModelID": "663490ec033d10563fbaec40",
+          "assetAge": 5,
+          "producedYear": 0,
+          "startWarranty": "2011-07-12T17:00:00",
+          "warrantyPeriod": 5,
+          "endWarranty": "2016-07-12T17:00:00",
+          "isVerify": false,
+          "settingCompanyID": "64f9aa6d98184a965b93eb3a",
+          "jobLocationID": "665e89e531f53304574aa1e7",
+          "warrantyType": "YEAR",
+          "createdByID": "64cc720d1bb4b13964124202"
+        }
+      ],
+      "files": []
+    }
+  }
+]
