@@ -119,10 +119,13 @@ load_dotenv()
 # ---------------------- Database Connection ---------------------- #
 @st.cache_resource
 def get_database_connection():
-    # Retrieve the connection string from the environment
+    # First try environment variables
     connection_string = os.getenv("MONGODB_CONNECTION_STRING")
+    # If not set, try Streamlit secrets (available on Streamlit Cloud)
     if not connection_string:
-        raise ValueError("MongoDB connection string not found in environment variables.")
+        connection_string = st.secrets.get("MONGODB_CONNECTION_STRING")
+    if not connection_string:
+        raise ValueError("MongoDB connection string not found in environment variables or secrets.")
     
     client = pymongo.MongoClient(connection_string)
     return client["prod"]
